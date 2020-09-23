@@ -7,8 +7,13 @@ export class VariablesService {
 
   constructor() { }
 
-  nombreCereales: string =" Cereales Nuevos"
-  nombreTuberculos: string =" Tuberculos Nuevos"
-  nombreCacao: string =" Cacao Nuevo"
+  screem1: string =" ¿Qué es?"
+  screem2: string =" Enfermedades"
+  screem3: string =" Publicaciones"
+
+  enfermedad: string =" Enfermedad"
+  tab1: string =" Sintomas"
+  tab2: string =" ¿Qué puede ser?"
+
 
 }

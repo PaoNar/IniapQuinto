@@ -10,16 +10,20 @@ const routes: Routes = [
     loadChildren: () => import('./home/home.module').then( m => m.HomePageModule)
   },
   {
-    path: 'tuberculos',
-    loadChildren: () => import('./pages/tuberculos/tuberculos.module').then( m => m.TuberculosPageModule)
+    path: 'publicaciones',
+    loadChildren: () => import('./menu/publicaciones/publicaciones.module').then( m => m.PublicacionesPageModule)
   },
   {
-    path: 'cereales',
-    loadChildren: () => import('./pages/cereales/cereales.module').then( m => m.CerealesPageModule)
+    path: 'enfermedades',
+    loadChildren: () => import('./menu/enfermedades/enfermedades.module').then( m => m.EnfermedadesPageModule)
   },
   {
-    path: 'cacao',
-    loadChildren: () => import('./pages/cacao/cacao.module').then( m => m.CacaoPageModule)
+    path: 'informacion',
+    loadChildren: () => import('./menu/informacion/informacion.module').then( m => m.InformacionPageModule)
+  },
+  {
+    path: 'enfermedad',
+    loadChildren: () => import('./enfermedad/enfermedad.module').then( m => m.EnfermedadPageModule)
   }
 ];
 

@@ -4,17 +4,17 @@ import { FormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
 
-import { CerealesPageRoutingModule } from './cereales-routing.module';
+import { EnfermedadPageRoutingModule } from './enfermedad-routing.module';
 
-import { CerealesPage } from './cereales.page';
+import { EnfermedadPage } from './enfermedad.page';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    CerealesPageRoutingModule
+    EnfermedadPageRoutingModule
   ],
-  declarations: [CerealesPage]
+  declarations: [EnfermedadPage]
 })
-export class CerealesPageModule {}
+export class EnfermedadPageModule {}

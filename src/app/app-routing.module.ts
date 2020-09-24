@@ -24,6 +24,10 @@ const routes: Routes = [
   {
     path: 'enfermedad',
     loadChildren: () => import('./enfermedad/enfermedad.module').then( m => m.EnfermedadPageModule)
+  },
+  {
+    path: 'plagas',
+    loadChildren: () => import('./plagas/plagas.module').then( m => m.PlagasPageModule)
   }
 ];
 

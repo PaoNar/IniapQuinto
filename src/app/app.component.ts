@@ -12,18 +12,13 @@ import { VariablesService} from './variables.service';
 })
 export class AppComponent {
   constructor(
-    private platform: Platform,
-    private splashScreen: SplashScreen,
-    private statusBar: StatusBar,
+     platform: Platform, statusBar: StatusBar, splashScreen: SplashScreen,
     public nombre: VariablesService
-  ) {
-    this.initializeApp();
-  }
+  ) {}
 
-  initializeApp() {
-    this.platform.ready().then(() => {
-      this.statusBar.styleDefault();
-      this.splashScreen.hide();
-    });
-  }
+  // platform.ready().then(() => {
+  //   StatusBar.styleDefault();
+  //   SplashScreen.hide();
+  // });
+ 
 }

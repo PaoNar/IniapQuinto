@@ -1,19 +1,18 @@
 import { Component, OnInit } from '@angular/core';
 import { ModalController } from '@ionic/angular';
-import { VariablesService } from '../../variables.service';
-import { ModalPage } from '../modal/modal.page';
-import { Pregunta2Page } from '../pregunta2/pregunta2.page';
-import { Pregunta3Page } from '../pregunta3/pregunta3.page';
+import { ModalPage } from '../enfermedad/modal/modal.page';
+import { Pregunta2Page } from '../enfermedad/pregunta2/pregunta2.page';
+import { Pregunta3Page } from '../enfermedad/pregunta3/pregunta3.page';
+import { VariablesService } from '../variables.service';
 
 @Component({
-  selector: 'app-tab2',
-  templateUrl: './tab2.page.html',
-  styleUrls: ['./tab2.page.scss'],
+  selector: 'app-plagas',
+  templateUrl: './plagas.page.html',
+  styleUrls: ['./plagas.page.scss'],
 })
-export class Tab2Page implements OnInit {
+export class PlagasPage implements OnInit {
 
-  constructor(public nombre: VariablesService,
-    private modalCtrl: ModalController) { }
+  constructor(public nombre: VariablesService, private modalCtrl: ModalController) { }
 
   ngOnInit() {
   }
@@ -42,5 +41,7 @@ export class Tab2Page implements OnInit {
 
     await modal.present();
   }
+
+  
 
 }

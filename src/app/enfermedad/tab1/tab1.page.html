@@ -1,13 +1,57 @@
-<ion-header [translucent]="true">
+<!-- <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title >
       {{nombre.tab1}}
     </ion-title>
   </ion-toolbar>
-</ion-header>
-
+</ion-header> -->
 
 <ion-content>
-    <h1>CONTENIDO</h1>
+  <ion-row class="btn">
+    <ion-col id="columnaA">
+      <ion-button
+        expand="full"
+        shape="round"
+        color="success"
+        fill="outline"
+        routerLink="/enfermedad"
+        >¿Qué Enfermedad es?</ion-button
+      >
+    </ion-col>
+  </ion-row>
 
+  <ion-row>
+    <ion-col>
+      <ion-button fill="outline">Pregunta1</ion-button>
+    </ion-col>
+    <ion-button expand="full" (click)="openModal()">imagenes</ion-button>
+
+  </ion-row>
+  <ion-row>
+    <ion-col>
+      <ion-button fill="outline">Pregunta2</ion-button>
+    </ion-col>
+    <ion-button expand="full" (click)="preg2Modal()">imagenes</ion-button>
+
+  </ion-row>
+  <ion-row>
+    <ion-col>
+      <ion-button fill="outline">Pregunta3</ion-button>
+    </ion-col>
+    <ion-button expand="full" (click)="preg3Modal()">imagenes</ion-button>
+
+  </ion-row>
 </ion-content>
+
+
+<!-- <ion-content padding>
+  <ion-list>
+    <ion-item *ngFor="let sitio of sitios">
+      <ion-thumbnail item-left>
+        <img [src]="sitio.foto">
+      </ion-thumbnail>
+      <h2>{{ sitio.address }}</h2>
+      <p>{{ sitio.description }}</p>
+    </ion-item>
+  </ion-list>
+  </ion-content> -->

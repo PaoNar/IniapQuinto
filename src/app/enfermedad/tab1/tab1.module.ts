@@ -7,13 +7,21 @@ import { IonicModule } from '@ionic/angular';
 import { Tab1PageRoutingModule } from './tab1-routing.module';
 
 import { Tab1Page } from './tab1.page';
+import { ModalPageModule } from '../modal/modal.module';
+import { ModalPage } from '../modal/modal.page';
 
 @NgModule({
+
+
+  entryComponents: [
+    ModalPage
+  ],
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    Tab1PageRoutingModule
+    Tab1PageRoutingModule,
+    ModalPageModule
   ],
   declarations: [Tab1Page]
 })

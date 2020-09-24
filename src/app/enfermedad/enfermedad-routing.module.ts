@@ -27,7 +27,19 @@ const routes: Routes = [
   path: '',
   redirectTo: '/enfermedad/tab1',
   pathMatch: 'full'
-}
+},
+  // {
+  //   path: 'pregunta3',
+  //   loadChildren: () => import('./pregunta3/pregunta3.module').then( m => m.Pregunta3PageModule)
+  // },
+  // {
+  //   path: 'pregunta2',
+  //   loadChildren: () => import('./pregunta2/pregunta2.module').then( m => m.Pregunta2PageModule)
+  // },
+  // {
+  //   path: 'modal',
+  //   loadChildren: () => import('./modal/modal.module').then( m => m.ModalPageModule)
+  // }
 ];
 
 @NgModule({

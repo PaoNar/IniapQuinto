@@ -15,5 +15,7 @@ export class VariablesService {
   tab1: string =" Sintomas"
   tab2: string =" ¿Qué puede ser?"
 
+  plagas: string =" Principales Enfermedades y Plagas"
+
 
 }

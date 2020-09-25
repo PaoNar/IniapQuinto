@@ -28,6 +28,7 @@ const routes: Routes = [
   redirectTo: '/enfermedad/tab1',
   pathMatch: 'full'
 },
+  
   // {
   //   path: 'pregunta3',
   //   loadChildren: () => import('./pregunta3/pregunta3.module').then( m => m.Pregunta3PageModule)

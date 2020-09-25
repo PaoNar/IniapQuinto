@@ -28,6 +28,10 @@ const routes: Routes = [
   {
     path: 'plagas',
     loadChildren: () => import('./plagas/plagas.module').then( m => m.PlagasPageModule)
+  },
+  {
+    path: 'respuesta',
+    loadChildren: () => import('./respuesta/respuesta.module').then( m => m.RespuestaPageModule)
   }
 ];
 

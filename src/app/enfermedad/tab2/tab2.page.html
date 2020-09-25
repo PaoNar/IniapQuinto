@@ -1,26 +1,57 @@
-
+<!-- <ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title size="small" >
+      {{nombre.tab2}}
+    </ion-title>
+  </ion-toolbar>
+</ion-header> -->
 
 <ion-content>
 
   <ion-row>
     <ion-col>
-      <ion-button fill="outline">enfermedad1</ion-button>
+      <ion-button color="dark" fill="outline">Respuesta1</ion-button>
     </ion-col>
-    <ion-button expand="full" (click)="openModal()">imagenes</ion-button>
 
+    <ion-col>
+      <img style="width: 80%;  height: 80%;"  src="../../../assets/imagenes/LOGO INIAP PNG-01.png">
+    </ion-col>
+
+    <ion-item >
+      <ion-icon name="add-circle-outline"></ion-icon>
+      <ion-icon (click)="openModal()" color="success" name="images-outline"></ion-icon>
+      <!-- <ion-label (click)="openModal()" ></ion-label> -->
+    </ion-item>
+  </ion-row>
+  
+  <ion-row>
+    <ion-col>
+      <ion-button color="dark" fill="outline">Respuesta2</ion-button>
+    </ion-col>
+
+    <ion-col>
+      <img style="width: 80%;  height: 80%;"  src="../../../assets/imagenes/LOGO INIAP PNG-01.png">
+    </ion-col>
+
+    <ion-item >
+      <ion-icon name="add-circle-outline"></ion-icon>
+      <ion-icon (click)="preg2Modal()" color="success" name="images-outline"></ion-icon>
+    </ion-item>
   </ion-row>
   <ion-row>
     <ion-col>
-      <ion-button fill="outline">enfermedad2</ion-button>
+      <ion-button color="dark" fill="outline">Respuesta3</ion-button>
     </ion-col>
-    <ion-button expand="full" (click)="preg2Modal()">imagenes</ion-button>
 
-  </ion-row>
-  <ion-row>
     <ion-col>
-      <ion-button fill="outline">enfermedad3</ion-button>
+      <img style="width: 80%;  height: 80%;"  src="../../../assets/imagenes/LOGO INIAP PNG-01.png">
     </ion-col>
-    <ion-button expand="full" (click)="preg3Modal()">imagenes</ion-button>
 
+    <ion-item >
+      <ion-icon name="add-circle-outline"></ion-icon>
+      <ion-icon (click)="preg3Modal()" color="success" name="images-outline"></ion-icon>
+
+      <!-- <ion-label (click)="preg3Modal()"  >mas imagenes</ion-label> -->
+    </ion-item>
   </ion-row>
 </ion-content>

@@ -11,15 +11,7 @@ const routes: Routes = [
   },
   {
     path: 'publicaciones',
-    loadChildren: () => import('./menu/publicaciones/publicaciones.module').then( m => m.PublicacionesPageModule)
-  },
-  {
-    path: 'enfermedades',
-    loadChildren: () => import('./menu/enfermedades/enfermedades.module').then( m => m.EnfermedadesPageModule)
-  },
-  {
-    path: 'informacion',
-    loadChildren: () => import('./menu/informacion/informacion.module').then( m => m.InformacionPageModule)
+    loadChildren: () => import('./publicaciones/publicaciones.module').then( m => m.PublicacionesPageModule)
   },
   {
     path: 'enfermedad',
@@ -32,6 +24,18 @@ const routes: Routes = [
   {
     path: 'respuesta',
     loadChildren: () => import('./respuesta/respuesta.module').then( m => m.RespuestaPageModule)
+  },
+  {
+    path: 'page1',
+    loadChildren: () => import('./respuesta2/page1/page1.module').then( m => m.Page1PageModule)
+  },
+  {
+    path: 'respuesta2',
+    loadChildren: () => import('./respuesta2/respuesta2.module').then( m => m.Respuesta2PageModule)
+  },
+  {
+    path: 'respuesta3',
+    loadChildren: () => import('./respuesta3/respuesta3.module').then( m => m.Respuesta3PageModule)
   }
 ];
 

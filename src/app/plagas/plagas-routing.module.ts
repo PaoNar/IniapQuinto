@@ -6,7 +6,7 @@ import { PlagasPage } from './plagas.page';
 const routes: Routes = [
   {
     path: '',
-    component: PlagasPage
+    component: PlagasPage, data: {breadcrumb: 'plagas'}
   }
 ];
 

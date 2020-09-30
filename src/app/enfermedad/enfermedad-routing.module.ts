@@ -6,7 +6,7 @@ import { EnfermedadPage } from './enfermedad.page';
 const routes: Routes = [
   {
     path: '',
-    component: EnfermedadPage,
+    component: EnfermedadPage, data: {breadcrumb: 'enfermedadtabs'},
     children: [
     {
       path: 'tab1',

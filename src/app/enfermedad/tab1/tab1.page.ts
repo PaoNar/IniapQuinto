@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ModalController } from '@ionic/angular';
-import { VariablesService } from '../../variables.service';
+import { VariablesService } from '../../servicios/variables.service';
 import { ModalPage } from '../modal/modal.page';
 import { Pregunta2Page } from '../pregunta2/pregunta2.page';
 import { Pregunta3Page } from '../pregunta3/pregunta3.page';

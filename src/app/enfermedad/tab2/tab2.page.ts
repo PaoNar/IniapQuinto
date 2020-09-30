@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ModalController } from '@ionic/angular';
-import { VariablesService } from '../../variables.service';
+import { VariablesService } from '../../servicios/variables.service';
 import { ModalPage } from '../modal/modal.page';
 import { Pregunta2Page } from '../pregunta2/pregunta2.page';
 import { Pregunta3Page } from '../pregunta3/pregunta3.page';
@@ -13,11 +13,23 @@ import { Pregunta3Page } from '../pregunta3/pregunta3.page';
 export class Tab2Page implements OnInit {
 
   constructor(public nombre: VariablesService,
-    private modalCtrl: ModalController) { }
+    private modalCtrl: ModalController) {
+    
+      // this.iniciarApp();
+    }
 
-  ngOnInit() {
-  }
+    // iniciarApp(){
+    //   this.platform.ready()
+    //   .then(() =>{
+    //     this.statusBar.styleDefault();
+    //     this.splashScreen.hide();
+    //   })
+    // }
 
+    ngOnInit(): void {
+      
+    }
+    
   async openModal(){
     const modal = await this.modalCtrl.create({
       component: ModalPage
@@ -42,5 +54,6 @@ export class Tab2Page implements OnInit {
 
     await modal.present();
   }
+  
 
 }

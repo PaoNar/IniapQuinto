@@ -3,7 +3,7 @@ import { ModalController } from '@ionic/angular';
 import { ModalPage } from '../enfermedad/modal/modal.page';
 import { Pregunta2Page } from '../enfermedad/pregunta2/pregunta2.page';
 import { Pregunta3Page } from '../enfermedad/pregunta3/pregunta3.page';
-import { VariablesService } from '../variables.service';
+import { VariablesService } from '../servicios/variables.service';
 
 @Component({
   selector: 'app-plagas',

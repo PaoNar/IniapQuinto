@@ -7,13 +7,6 @@ import { ModalController } from '@ionic/angular';
   styleUrls: ['./modal.page.scss'],
 })
 export class ModalPage implements OnInit {
-
-  coords : any = { lat: 0, lng: 0 }
-  address: string;
-  description: string = '';
-  foto: any = '';
-
-
   // @Input() nombre;
   // @Input() pais;
 

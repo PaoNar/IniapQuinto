@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { VariablesService } from '../variables.service';
+import { VariablesService } from '../servicios/variables.service';
+
 
 @Component({
   selector: 'app-enfermedad',
@@ -8,9 +9,21 @@ import { VariablesService } from '../variables.service';
 })
 export class EnfermedadPage implements OnInit {
 
-  constructor(public nombre: VariablesService) { }
+  constructor(public nombre: VariablesService, ) {
+    
+      // this.iniciarApp();
+    }
+    ngOnInit(){
 
-  ngOnInit() {
-  }
+    }
+
+    // iniciarApp(){
+    //   this.platform.ready()
+    //   .then(() =>{
+    //     this.statusBar.styleDefault();
+    //     this.splashScreen.hide();
+    //   })
+    // }
 
 }
+

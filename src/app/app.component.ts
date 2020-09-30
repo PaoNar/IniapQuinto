@@ -3,7 +3,9 @@ import { Component } from '@angular/core';
 import { Platform } from '@ionic/angular';
 import { SplashScreen } from '@ionic-native/splash-screen/ngx';
 import { StatusBar } from '@ionic-native/status-bar/ngx';
-import { VariablesService} from './variables.service';
+import { VariablesService} from './servicios/variables.service';
+
+
 
 @Component({
   selector: 'app-root',
@@ -13,12 +15,16 @@ import { VariablesService} from './variables.service';
 export class AppComponent {
   constructor(
      platform: Platform, statusBar: StatusBar, splashScreen: SplashScreen,
-    public nombre: VariablesService
+    public nombre: VariablesService,
+    
+
   ) {}
 
   // platform.ready().then(() => {
   //   StatusBar.styleDefault();
   //   SplashScreen.hide();
   // });
+
+  
  
 }

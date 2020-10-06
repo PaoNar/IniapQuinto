@@ -36,6 +36,10 @@ const routes: Routes = [
   {
     path: 'respuesta3',
     loadChildren: () => import('./respuesta3/respuesta3.module').then( m => m.Respuesta3PageModule)
+  },
+  {
+    path: 'hojas-amarillas',
+    loadChildren: () => import('./hojas-amarillas/hojas-amarillas.module').then( m => m.HojasAmarillasPageModule)
   }
 ];
 

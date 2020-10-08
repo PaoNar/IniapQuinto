@@ -1,0 +1,33 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Detalles</ion-title>
+    <ion-buttons slot="start">
+      <ion-menu-button menu="main-menu"></ion-menu-button>
+    </ion-buttons>
+    <ion-buttons slot="end">
+      <ion-icon name="arrow-undo-outline" routerLink="/enfermedad"></ion-icon>
+    </ion-buttons>
+  </ion-toolbar>
+
+  <ion-toolbar>
+    <ion-title size="small" >
+      Hojas
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-tabs>
+    <ion-tab-bar slot="top" padding>
+      <ion-tab-button tab="page1">
+        <ion-label>{{nombre.tab1}} </ion-label>
+      </ion-tab-button>
+
+      <ion-tab-button tab="page2">
+        <ion-label>{{nombre.tab2}} </ion-label>
+      </ion-tab-button>
+    </ion-tab-bar>
+    
+  </ion-tabs>
+</ion-content>
+

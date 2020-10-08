@@ -1,0 +1,138 @@
+<!-- <ion-header>
+  <ion-toolbar>
+    <ion-title>En toda la Planta/</ion-title>
+  </ion-toolbar>
+</ion-header> -->
+
+<ion-content>
+  <ion-row class="btn">
+    <ion-card-content class="texto">
+      {{nombre.titulopreg2}}
+    </ion-card-content>
+  </ion-row>
+
+  <ion-row class="cuadro" >  
+    <ion-col>
+      <!-- <ion-button color="dark" fill="outline" routerLink="../../../respuesta" >Respuesta1</ion-button> -->
+      <ion-item  routerLink="../../../respuesta2-hojas" >
+        <ion-label>Hojas con manchas</ion-label>
+      </ion-item>
+    </ion-col>
+
+    <ion-item >
+      <ion-icon name="add-circle-outline"></ion-icon>
+      <ion-icon (click)="openModal()" color="success" name="images-outline"></ion-icon>
+    </ion-item>
+
+    <ion-row>
+      <img style="padding:10%; width: 80%; height: 100%; position: relative;"  src="../../../assets/imagenes/LOGO INIAP PNG-01.png">
+    </ion-row>
+  </ion-row>
+  
+  <ion-row class="cuadro">
+    <ion-col>
+      <!-- <ion-button color="dark" fill="outline" routerLink="../../../respuesta">En toda la planta</ion-button> -->
+      <ion-item routerLink="../../../respuesta3/page5-hojas"  >
+        <ion-label>Hojas moradas</ion-label>
+      </ion-item>
+    </ion-col>
+
+    <ion-item >
+      <ion-icon name="add-circle-outline"></ion-icon>
+      <ion-icon (click)="preg2Modal()" color="success" name="images-outline"></ion-icon>
+    </ion-item>
+
+    <ion-row>
+      <img style="padding:10%; width: 80%; height: 100%; position: relative;"  src="../../../assets/imagenes/LOGO INIAP PNG-01.png">
+    </ion-row>
+  </ion-row>
+
+  <ion-row class="cuadro">
+    <ion-col>
+      <!-- <ion-button color="dark" fill="outline"  routerLink="../../../respuesta">Respuesta3</ion-button> -->
+      <ion-item routerLink="../../../hojas2-amarillas" >
+        <ion-label>Hojas amarillas</ion-label>
+      </ion-item>
+    </ion-col>
+
+    <ion-item >
+      <ion-icon name="add-circle-outline"></ion-icon>
+      <ion-icon (click)="preg3Modal()" color="success" name="images-outline"></ion-icon>
+    </ion-item>
+
+    <ion-row>
+      <img style="padding:10%; width: 80%; height: 100%; position: relative;"  src="../../../assets/imagenes/LOGO INIAP PNG-01.png">
+    </ion-row>
+  </ion-row>
+
+  <ion-row class="cuadro">
+    <ion-col>
+      <!-- <ion-button color="dark" fill="outline"  routerLink="../../../respuesta">Respuesta3</ion-button> -->
+      <ion-item routerLink="../../../respuesta3/heladas-hojas" >
+        <ion-label>Hojas marchitas o quemadas</ion-label>
+      </ion-item>
+    </ion-col>
+
+    <ion-item >
+      <ion-icon name="add-circle-outline"></ion-icon>
+      <ion-icon (click)="preg3Modal()" color="success" name="images-outline"></ion-icon>
+    </ion-item>
+
+    <ion-row>
+      <img style="padding:10%; width: 80%; height: 100%; position: relative;"  src="../../../assets/imagenes/LOGO INIAP PNG-01.png">
+    </ion-row>
+  </ion-row>
+
+  <ion-row class="cuadro">
+    <ion-col>
+      <ion-item routerLink="" >
+        <ion-label>Hojas mordidas</ion-label>
+      </ion-item>
+    </ion-col>
+
+    <ion-item >
+      <ion-icon name="add-circle-outline"></ion-icon>
+      <ion-icon (click)="preg3Modal()" color="success" name="images-outline"></ion-icon>
+    </ion-item>
+
+    <ion-row>
+      <img style="padding:10%; width: 80%; height: 100%; position: relative;"  src="../../../assets/imagenes/LOGO INIAP PNG-01.png">
+    </ion-row>
+  </ion-row>
+
+  <ion-row class="cuadro">
+    <ion-col>
+      <!-- <ion-button color="dark" fill="outline"  routerLink="../../../respuesta">Respuesta3</ion-button> -->
+      <ion-item routerLink="#" >
+        <ion-label>Mosaico en las hojas</ion-label>
+      </ion-item>
+    </ion-col>
+
+    <ion-item >
+      <ion-icon name="add-circle-outline"></ion-icon>
+      <ion-icon (click)="preg3Modal()" color="success" name="images-outline"></ion-icon>
+    </ion-item>
+
+    <ion-row>
+      <img style="padding:10%; width: 80%; height: 100%; position: relative;"  src="../../../assets/imagenes/LOGO INIAP PNG-01.png">
+    </ion-row>
+  </ion-row>
+
+  <ion-row class="cuadro">
+    <ion-col>
+      <!-- <ion-button color="dark" fill="outline"  routerLink="../../../respuesta">Respuesta3</ion-button> -->
+      <ion-item routerLink="" >
+        <ion-label>Enrollamiento en las hojas</ion-label>
+      </ion-item>
+    </ion-col>
+
+    <ion-item >
+      <ion-icon name="add-circle-outline"></ion-icon>
+      <ion-icon (click)="preg3Modal()" color="success" name="images-outline"></ion-icon>
+    </ion-item>
+    <ion-row>
+      <img style="padding:10%; width: 80%; height: 100%; position: relative;"  src="../../../assets/imagenes/LOGO INIAP PNG-01.png">
+    </ion-row>
+  </ion-row>
+</ion-content>
+

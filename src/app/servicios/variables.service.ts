@@ -43,7 +43,7 @@ export class VariablesService {
   preg14: string = "lancha"
   preg15: string = "Roya"
   preg16: string = "Trips"
-  preg17: string = "Punta morada"
+  // preg17: string = "Punta morada"
   preg18: string = "Deficiencias nutricionales"
   preg19: string = "Heladas"
   preg20: string = "Nematodos"

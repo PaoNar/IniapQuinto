@@ -40,6 +40,22 @@ const routes: Routes = [
   {
     path: 'hojas-amarillas',
     loadChildren: () => import('./hojas-amarillas/hojas-amarillas.module').then( m => m.HojasAmarillasPageModule)
+  },
+  {
+    path: 'respuesta2-hojas',
+    loadChildren: () => import('./respuesta2-hojas/respuesta2-hojas.module').then( m => m.Respuesta2HojasPageModule)
+  },
+  {
+    path: 'respuesta-hojas',
+    loadChildren: () => import('./respuesta-hojas/respuesta-hojas.module').then( m => m.RespuestaHojasPageModule)
+  },
+  {
+    path: 'plantas-pequenas',
+    loadChildren: () => import('./plantas-pequenas/plantas-pequenas.module').then( m => m.PlantasPequenasPageModule)
+  },
+  {
+    path: 'hojas2-amarillas',
+    loadChildren: () => import('./hojas2-amarillas/hojas2-amarillas.module').then( m => m.Hojas2AmarillasPageModule)
   }
 ];
 

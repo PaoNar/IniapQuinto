@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { VariablesService } from 'src/app/servicios/variables.service';
 
 @Component({
   selector: 'app-heladas',
@@ -7,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeladasPage implements OnInit {
 
-  constructor() { }
+  constructor(public nombre: VariablesService) { }
 
   ngOnInit() {
   }

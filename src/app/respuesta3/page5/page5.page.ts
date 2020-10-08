@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { VariablesService } from 'src/app/servicios/variables.service';
 
 @Component({
   selector: 'app-page5',
@@ -7,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class Page5Page implements OnInit {
 
-  constructor() { }
+  constructor(public nombre: VariablesService) { }
 
   ngOnInit() {
   }

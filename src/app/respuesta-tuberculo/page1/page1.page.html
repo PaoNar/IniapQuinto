@@ -1,0 +1,155 @@
+<!-- <ion-header>
+  <ion-toolbar>
+    <ion-title>En toda la Planta/</ion-title>
+  </ion-toolbar>
+</ion-header> -->
+
+<ion-content>
+  <ion-row class="btn">
+    <ion-card-content class="texto">
+      {{nombre.titulopreg2}}
+    </ion-card-content>
+  </ion-row>
+
+  <ion-row class="cuadro" >  
+    <ion-col>
+      <!-- <ion-button color="dark" fill="outline" routerLink="../../../respuesta" >Respuesta1</ion-button> -->
+      <ion-item  routerLink="../../../tuberculo/gusano-blanco" >
+        <ion-label>Huecos o galerías</ion-label>
+      </ion-item>
+    </ion-col>
+
+    <ion-item >
+      <ion-icon name="add-circle-outline"></ion-icon>
+      <ion-icon (click)="openModal()" color="success" name="images-outline"></ion-icon>
+    </ion-item>
+
+    <ion-row>
+      <img style="padding:10%; width: 80%; height: 100%; position: relative;"  src="../../../assets/imagenes/LOGO INIAP PNG-01.png">
+    </ion-row>
+  </ion-row>
+  
+  <ion-row class="cuadro">
+    <ion-col>
+      <!-- <ion-button color="dark" fill="outline" routerLink="../../../respuesta">En toda la planta</ion-button> -->
+      <ion-item routerLink="../../../tuberculo/pie-negro"  >
+        <ion-label>Pudrición de mal olor</ion-label>
+      </ion-item>
+    </ion-col>
+
+    <ion-item >
+      <ion-icon name="add-circle-outline"></ion-icon>
+      <ion-icon (click)="preg2Modal()" color="success" name="images-outline"></ion-icon>
+    </ion-item>
+
+    <ion-row>
+      <img style="padding:10%; width: 80%; height: 100%; position: relative;"  src="../../../assets/imagenes/LOGO INIAP PNG-01.png">
+    </ion-row>
+  </ion-row>
+
+  <ion-row class="cuadro">
+    <ion-col>
+      <!-- <ion-button color="dark" fill="outline"  routerLink="../../../respuesta">Respuesta3</ion-button> -->
+      <ion-item routerLink="../../../tuberculo/carbon" >
+        <ion-label>Presencia de agallas (dentro de estas manchas negras)</ion-label>
+      </ion-item>
+    </ion-col>
+
+    <ion-item >
+      <ion-icon name="add-circle-outline"></ion-icon>
+      <ion-icon (click)="preg3Modal()" color="success" name="images-outline"></ion-icon>
+    </ion-item>
+
+    <ion-row>
+      <img style="padding:10%; width: 80%; height: 100%; position: relative;"  src="../../../assets/imagenes/LOGO INIAP PNG-01.png">
+    </ion-row>
+  </ion-row>
+
+  <ion-row class="cuadro">
+    <ion-col>
+      <!-- <ion-button color="dark" fill="outline"  routerLink="../../../respuesta">Respuesta3</ion-button> -->
+      <ion-item routerLink="../../../tuberculo/costra-negra" >
+        <ion-label>Costras negras (iguales a la tierra)</ion-label>
+      </ion-item>
+    </ion-col>
+
+    <ion-item >
+      <ion-icon name="add-circle-outline"></ion-icon>
+      <ion-icon (click)="preg3Modal()" color="success" name="images-outline"></ion-icon>
+    </ion-item>
+
+    <ion-row>
+      <img style="padding:10%; width: 80%; height: 100%; position: relative;"  src="../../../assets/imagenes/LOGO INIAP PNG-01.png">
+    </ion-row>
+  </ion-row>
+
+  <ion-row class="cuadro">
+    <ion-col>
+      <ion-item routerLink="../../../tuberculo/sarna" >
+        <ion-label>Ampollas, chimbis o mitzas color ladrillo</ion-label>
+      </ion-item>
+    </ion-col>
+
+    <ion-item >
+      <ion-icon name="add-circle-outline"></ion-icon>
+      <ion-icon (click)="preg3Modal()" color="success" name="images-outline"></ion-icon>
+    </ion-item>
+
+    <ion-row>
+      <img style="padding:10%; width: 80%; height: 100%; position: relative;"  src="../../../assets/imagenes/LOGO INIAP PNG-01.png">
+    </ion-row>
+  </ion-row>
+
+  <ion-row class="cuadro">
+    <ion-col>
+      <ion-item routerLink="../../../tuberculo/agrietamiento" >
+        <ion-label>Grietas de color café, parecen escamas</ion-label>
+      </ion-item>
+    </ion-col>
+
+    <ion-item >
+      <ion-icon name="add-circle-outline"></ion-icon>
+      <ion-icon (click)="preg3Modal()" color="success" name="images-outline"></ion-icon>
+    </ion-item>
+
+    <ion-row>
+      <img style="padding:10%; width: 80%; height: 100%; position: relative;"  src="../../../assets/imagenes/LOGO INIAP PNG-01.png">
+    </ion-row>
+  </ion-row>
+
+  <ion-row class="cuadro">
+    <ion-col>
+      <ion-item routerLink="../../../tuberculo/corazon-hueco" >
+        <ion-label>Cavidad en la parte interna del tubérculo</ion-label>
+      </ion-item>
+    </ion-col>
+
+    <ion-item >
+      <ion-icon name="add-circle-outline"></ion-icon>
+      <ion-icon (click)="preg3Modal()" color="success" name="images-outline"></ion-icon>
+    </ion-item>
+
+    <ion-row>
+      <img style="padding:10%; width: 80%; height: 100%; position: relative;"  src="../../../assets/imagenes/LOGO INIAP PNG-01.png">
+    </ion-row>
+  </ion-row>
+
+  <ion-row class="cuadro">
+    <ion-col>
+      <ion-item routerLink="../../../tuberculo/rajaduras" >
+        <ion-label>Rajaduras</ion-label>
+      </ion-item>
+    </ion-col>
+
+    <ion-item >
+      <ion-icon name="add-circle-outline"></ion-icon>
+      <ion-icon (click)="preg3Modal()" color="success" name="images-outline"></ion-icon>
+    </ion-item>
+
+    <ion-row>
+      <img style="padding:10%; width: 80%; height: 100%; position: relative;"  src="../../../assets/imagenes/LOGO INIAP PNG-01.png">
+    </ion-row>
+  </ion-row>
+
+</ion-content>
+

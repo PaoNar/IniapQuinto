@@ -56,6 +56,42 @@ const routes: Routes = [
   {
     path: 'hojas2-amarillas',
     loadChildren: () => import('./hojas2-amarillas/hojas2-amarillas.module').then( m => m.Hojas2AmarillasPageModule)
+  },
+  {
+    path: 'hojas-mordidas',
+    loadChildren: () => import('./hojas-mordidas/hojas-mordidas.module').then( m => m.HojasMordidasPageModule)
+  },
+  {
+    path: 'respuesta-tallos',
+    loadChildren: () => import('./respuesta-tallos/respuesta-tallos.module').then( m => m.RespuestaTallosPageModule)
+  },
+  {
+    path: 'tallos',
+    loadChildren: () => import('./tallos/tallos.module').then( m => m.TallosPageModule)
+  },
+  {
+    path: 'respuesta-tuberculo',
+    loadChildren: () => import('./respuesta-tuberculo/respuesta-tuberculo.module').then( m => m.RespuestaTuberculoPageModule)
+  },
+  {
+    path: 'tuberculo',
+    loadChildren: () => import('./tuberculo/tuberculo.module').then( m => m.TuberculoPageModule)
+  },
+  {
+    path: 'raiz',
+    loadChildren: () => import('./raiz/raiz.module').then( m => m.RaizPageModule)
+  },
+  {
+    path: 'respuesta-raiz',
+    loadChildren: () => import('./respuesta-raiz/respuesta-raiz.module').then( m => m.RespuestaRaizPageModule)
+  },
+  {
+    path: 'respuesta-insectos',
+    loadChildren: () => import('./respuesta-insectos/respuesta-insectos.module').then( m => m.RespuestaInsectosPageModule)
+  },
+  {
+    path: 'hojas',
+    loadChildren: () => import('./hojas/hojas.module').then( m => m.HojasPageModule)
   }
 ];
 

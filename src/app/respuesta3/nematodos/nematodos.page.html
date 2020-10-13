@@ -1,26 +1,32 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title size="small" >
-      Planta/Plantas-pequeñas/Raices-bolitas
+    <ion-title size="small">
+      Planta/Plantas pequeñas/Raices-bolitas color crema
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-  <ion-row >
+  <ion-row>
     <ion-col>
-      <ion-item routerLink="#" >
-        <ion-label> Nematodos (Globodera pallida) </ion-label>
+      <ion-item>
+        <ion-label> {{nombre.preg12}} </ion-label>
       </ion-item>
     </ion-col>
-    <ion-item >
+    <ion-item>
       <ion-icon name="add-circle-outline"></ion-icon>
-      <ion-icon (click)="openModal()" color="success" name="images-outline"></ion-icon>
+      <ion-icon
+        (click)="openModal()"
+        color="success"
+        name="images-outline"
+      ></ion-icon>
     </ion-item>
 
     <ion-row>
-      <img style="padding:10%; width: 80%; height: 100%; position: relative;"  src="../../../assets/imagenes/LOGO INIAP PNG-01.png">
+      <img
+        style="padding: 10%; width: 80%; height: 100%; position: relative"
+        src="../../../assets/imagenes/LOGO INIAP PNG-01.png"
+      />
     </ion-row>
   </ion-row>
-
 </ion-content>

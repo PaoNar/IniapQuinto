@@ -43,7 +43,7 @@ export class VariablesService {
   preg14: string = "lancha"
   preg15: string = "Roya"
   preg16: string = "Trips"
-  // preg17: string = "Punta morada"
+  preg17: string = "Virosis Nematodos"
   preg18: string = "Deficiencias nutricionales"
   preg19: string = "Heladas"
   preg20: string = "Nematodos"
@@ -95,4 +95,14 @@ export class VariablesService {
   res32: string = "presencia de bolitas cremas en las raíces"
   res33: string = "Presencia de insectos"
   res34: string = "En las hojas"
+
+
+
+
+  Enfer1: string = "Lancha"
+  Enfer1Cien: string = "Tizon"
+  Enfer1Des: string = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+  Enfer1_Sint: string = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+  ManejoEnfer1: string = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+
 }

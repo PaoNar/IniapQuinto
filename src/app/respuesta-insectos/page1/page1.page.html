@@ -7,80 +7,105 @@
 <ion-content>
   <ion-row class="btn">
     <ion-card-content class="texto">
-      ¿Què observa?
+      <!-- ¿Què observa? -->
+      {{nombre.titulopreg4}}
     </ion-card-content>
   </ion-row>
 
-  <ion-row class="cuadro" >  
+  <ion-row class="cuadro">
     <ion-col>
       <!-- <ion-button color="dark" fill="outline" routerLink="../../../respuesta" >Respuesta1</ion-button> -->
-      <ion-item  routerLink="#" >
-        <ion-label>Gusano blanco (Premnotrypes vorax H.)</ion-label>
+      <ion-item>
+        <ion-label>{{nombre.preg5}} </ion-label>
       </ion-item>
     </ion-col>
 
-    <ion-item >
+    <ion-item>
       <ion-icon name="add-circle-outline"></ion-icon>
-      <ion-icon (click)="openModal()" color="success" name="images-outline"></ion-icon>
+      <ion-icon
+        (click)="openModal()"
+        color="success"
+        name="images-outline"
+      ></ion-icon>
     </ion-item>
 
     <ion-row>
-      <img style="padding:10%; width: 80%; height: 100%; position: relative;"  src="../../../assets/imagenes/LOGO INIAP PNG-01.png">
-    </ion-row>
-  </ion-row>
-  
-  <ion-row class="cuadro">
-    <ion-col>
-      <!-- <ion-button color="dark" fill="outline" routerLink="../../../respuesta">En toda la planta</ion-button> -->
-      <ion-item routerLink="#"  >
-        <ion-label>Polilla</ion-label>
-      </ion-item>
-    </ion-col>
-
-    <ion-item >
-      <ion-icon name="add-circle-outline"></ion-icon>
-      <ion-icon (click)="preg2Modal()" color="success" name="images-outline"></ion-icon>
-    </ion-item>
-
-    <ion-row>
-      <img style="padding:10%; width: 80%; height: 100%; position: relative;"  src="../../../assets/imagenes/LOGO INIAP PNG-01.png">
+      <img
+        style="padding: 10%; width: 80%; height: 100%; position: relative"
+        src="../../../assets/imagenes/LOGO INIAP PNG-01.png"
+      />
     </ion-row>
   </ion-row>
 
   <ion-row class="cuadro">
     <ion-col>
-      <!-- <ion-button color="dark" fill="outline"  routerLink="../../../respuesta">Respuesta3</ion-button> -->
-      <ion-item routerLink="#" >
-        <ion-label>Psílidos</ion-label>
+      <ion-item>
+        <ion-label>{{nombre.preg21}}</ion-label>
       </ion-item>
     </ion-col>
 
-    <ion-item >
+    <ion-item>
       <ion-icon name="add-circle-outline"></ion-icon>
-      <ion-icon (click)="preg3Modal()" color="success" name="images-outline"></ion-icon>
+      <ion-icon
+        (click)="preg2Modal()"
+        color="success"
+        name="images-outline"
+      ></ion-icon>
     </ion-item>
 
     <ion-row>
-      <img style="padding:10%; width: 80%; height: 100%; position: relative;"  src="../../../assets/imagenes/LOGO INIAP PNG-01.png">
+      <img
+        style="padding: 10%; width: 80%; height: 100%; position: relative"
+        src="../../../assets/imagenes/LOGO INIAP PNG-01.png"
+      />
     </ion-row>
   </ion-row>
 
   <ion-row class="cuadro">
     <ion-col>
-      <!-- <ion-button color="dark" fill="outline"  routerLink="../../../respuesta">Respuesta3</ion-button> -->
-      <ion-item routerLink="#" >
-        <ion-label>Pulgones</ion-label>
+      <ion-item>
+        <ion-label>{{nombre.preg28}}</ion-label>
       </ion-item>
     </ion-col>
 
-    <ion-item >
+    <ion-item>
       <ion-icon name="add-circle-outline"></ion-icon>
-      <ion-icon (click)="preg3Modal()" color="success" name="images-outline"></ion-icon>
+      <ion-icon
+        (click)="preg3Modal()"
+        color="success"
+        name="images-outline"
+      ></ion-icon>
     </ion-item>
 
     <ion-row>
-      <img style="padding:10%; width: 80%; height: 100%; position: relative;"  src="../../../assets/imagenes/LOGO INIAP PNG-01.png">
+      <img
+        style="padding: 10%; width: 80%; height: 100%; position: relative"
+        src="../../../assets/imagenes/LOGO INIAP PNG-01.png"
+      />
+    </ion-row>
+  </ion-row>
+
+  <ion-row class="cuadro">
+    <ion-col>
+      <ion-item>
+        <ion-label>{{nombre.preg29}}</ion-label>
+      </ion-item>
+    </ion-col>
+
+    <ion-item>
+      <ion-icon name="add-circle-outline"></ion-icon>
+      <ion-icon
+        (click)="preg3Modal()"
+        color="success"
+        name="images-outline"
+      ></ion-icon>
+    </ion-item>
+
+    <ion-row>
+      <img
+        style="padding: 10%; width: 80%; height: 100%; position: relative"
+        src="../../../assets/imagenes/LOGO INIAP PNG-01.png"
+      />
     </ion-row>
   </ion-row>
 </ion-content>
-

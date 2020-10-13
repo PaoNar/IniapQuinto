@@ -14,8 +14,8 @@
 <ion-content>
   <ion-row class="cuadro">
     <ion-col>
-      <ion-item routerLink="#">
-        <ion-label>Roya (Puccinia pittieriana)</ion-label>
+      <ion-item >
+        <ion-label> {{nombre.preg2}}</ion-label>
       </ion-item>
     </ion-col>
     <ion-item>
@@ -37,8 +37,8 @@
 
   <ion-row class="cuadro">
     <ion-col>
-      <ion-item routerLink="#">
-        <ion-label>Lancha o tizón tardío (Phytophthora infestans)</ion-label>
+      <ion-item >
+        <ion-label>{{nombre.preg3}}</ion-label>
       </ion-item>
     </ion-col>
 
@@ -61,8 +61,8 @@
 
   <ion-row class="cuadro">
     <ion-col>
-      <ion-item routerLink="#">
-        <ion-label>Trips (Frankliniella tuberosi)</ion-label>
+      <ion-item>
+        <ion-label>{{nombre.preg4}}</ion-label>
       </ion-item>
     </ion-col>
 
@@ -85,8 +85,8 @@
 
   <ion-row class="cuadro">
     <ion-col>
-      <ion-item routerLink="#">
-        <ion-label>Gusano blanco (Premnotrypes vorax H.)</ion-label>
+      <ion-item>
+        <ion-label>{{nombre.preg5}}</ion-label>
       </ion-item>
     </ion-col>
 
@@ -109,8 +109,8 @@
 
   <ion-row class="cuadro">
     <ion-col>
-      <ion-item routerLink="#">
-        <ion-label>Mosca minadora (Liriomyza huidobrensis)</ion-label>
+      <ion-item >
+        <ion-label>{{nombre.preg6}}</ion-label>
       </ion-item>
     </ion-col>
 
@@ -133,8 +133,8 @@
 
   <ion-row class="cuadro">
     <ion-col>
-      <ion-item routerLink="#">
-        <ion-label>Polilla</ion-label>
+      <ion-item >
+        <ion-label>{{nombre.preg21}}</ion-label>
       </ion-item>
     </ion-col>
 
@@ -157,8 +157,8 @@
 
   <ion-row class="cuadro">
     <ion-col>
-      <ion-item routerLink="#">
-        <ion-label>Virosis</ion-label>
+      <ion-item >
+        <ion-label>{{nombre.preg9}}</ion-label>
       </ion-item>
     </ion-col>
     <ion-item>
@@ -180,55 +180,8 @@
 
   <ion-row class="cuadro">
     <ion-col>
-      <ion-item routerLink="#">
-        <ion-label>Pie negro (Pectobacterium sp)</ion-label>
-      </ion-item>
-    </ion-col>
-
-    <ion-item>
-      <ion-icon name="add-circle-outline"></ion-icon>
-      <ion-icon
-        (click)="preg3Modal()"
-        color="success"
-        name="images-outline"
-      ></ion-icon>
-    </ion-item>
-
-    <ion-row>
-      <img
-        style="padding: 10%; width: 80%; height: 100%; position: relative"
-        src="../../../assets/imagenes/LOGO INIAP PNG-01.png"
-      />
-    </ion-row>
-  </ion-row>
-
-  <ion-row class="cuadro">
-    <ion-col>
-      <ion-item routerLink="#">
-        <ion-label>Helada</ion-label>
-      </ion-item>
-    </ion-col>
-    <ion-item>
-      <ion-icon name="add-circle-outline"></ion-icon>
-      <ion-icon
-        (click)="preg3Modal()"
-        color="success"
-        name="images-outline"
-      ></ion-icon>
-    </ion-item>
-
-    <ion-row>
-      <img
-        style="padding: 10%; width: 80%; height: 100%; position: relative"
-        src="../../../assets/imagenes/LOGO INIAP PNG-01.png"
-      />
-    </ion-row>
-  </ion-row>
-
-  <ion-row class="cuadro">
-    <ion-col>
-      <ion-item routerLink="#">
-        <ion-label>Costra negra o carachas (Rizhoctonia solani)</ion-label>
+      <ion-item >
+        <ion-label>{{nombre.preg11}}</ion-label>
       </ion-item>
     </ion-col>
 
@@ -251,8 +204,31 @@
 
   <ion-row class="cuadro">
     <ion-col>
-      <ion-item routerLink="#">
-        <ion-label>Nematodos (Globodera pallida)</ion-label>
+      <ion-item >
+        <ion-label>{{nombre.preg10}}</ion-label>
+      </ion-item>
+    </ion-col>
+    <ion-item>
+      <ion-icon name="add-circle-outline"></ion-icon>
+      <ion-icon
+        (click)="preg3Modal()"
+        color="success"
+        name="images-outline"
+      ></ion-icon>
+    </ion-item>
+
+    <ion-row>
+      <img
+        style="padding: 10%; width: 80%; height: 100%; position: relative"
+        src="../../../assets/imagenes/LOGO INIAP PNG-01.png"
+      />
+    </ion-row>
+  </ion-row>
+
+  <ion-row class="cuadro">
+    <ion-col>
+      <ion-item>
+        <ion-label>{{nombre.preg22}}</ion-label>
       </ion-item>
     </ion-col>
 
@@ -275,8 +251,32 @@
 
   <ion-row class="cuadro">
     <ion-col>
-      <ion-item routerLink="#">
-        <ion-label>Punta morada</ion-label>
+      <ion-item >
+        <ion-label>{{nombre.preg12}}</ion-label>
+      </ion-item>
+    </ion-col>
+
+    <ion-item>
+      <ion-icon name="add-circle-outline"></ion-icon>
+      <ion-icon
+        (click)="preg3Modal()"
+        color="success"
+        name="images-outline"
+      ></ion-icon>
+    </ion-item>
+
+    <ion-row>
+      <img
+        style="padding: 10%; width: 80%; height: 100%; position: relative"
+        src="../../../assets/imagenes/LOGO INIAP PNG-01.png"
+      />
+    </ion-row>
+  </ion-row>
+
+  <ion-row class="cuadro">
+    <ion-col>
+      <ion-item >
+        <ion-label>{{nombre.preg13}}</ion-label>
       </ion-item>
     </ion-col>
 

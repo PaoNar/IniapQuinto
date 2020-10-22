@@ -1,9 +1,13 @@
 import { Component, OnInit } from '@angular/core';
 import { ModalController } from '@ionic/angular';
+import { HojasImagePage } from 'src/app/images/hojas-image/hojas-image.page';
+import { HojasPage } from 'src/app/Modals/hojas/hojas.page';
+import { InsectosModalPage } from 'src/app/modals/insectos-modal/insectos-modal.page';
+import { RaizModalPage } from 'src/app/modals/raiz-modal/raiz-modal.page';
+import { TalloPage } from 'src/app/Modals/tallo/tallo.page';
+import { TodaPlantaPage } from 'src/app/Modals/toda-planta/toda-planta.page';
+import { TuberculoPage } from 'src/app/modals/tuberculo/tuberculo.page';
 import { VariablesService } from '../../servicios/variables.service';
-import { ModalPage } from '../modal/modal.page';
-import { Pregunta2Page } from '../pregunta2/pregunta2.page';
-import { Pregunta3Page } from '../pregunta3/pregunta3.page';
 
 
 @Component({
@@ -21,48 +25,64 @@ export class Tab1Page implements OnInit {
   }
 
 
-  async openModal(){
+  async todalaPlantaModal(){
     const modal = await this.modalCtrl.create({
-      component: ModalPage
+      component: TodaPlantaPage
     })
 
     await modal.present();
   }
 
-  async preg2Modal(){
+  async hojasModal(){
     const modal = await this.modalCtrl.create({
-      component: Pregunta2Page
-    })
-
-    await modal.present();
-  }
-
-
-  async preg3Modal(){
-    const modal = await this.modalCtrl.create({
-      component: Pregunta3Page
+      component: HojasPage
     })
 
     await modal.present();
   }
 
 
-  // ionViewDidEnter(){
-  //   this.db.getSitios().then((res)=>{
-  //  this.sitios = [];
-  //  for(var i = 0; i < res.rows.length; i++){
-  //      this.sitios.push({
-  //        id: res.rows.item(i).id,
-  //        lat: res.rows.item(i).lat,
-  //        lng: res.rows.item(i).lng,
-  //        address: res.rows.item(i).address,
-  //        description: res.rows.item(i).description,
-  //        foto: res.rows.item(i).foto
-  //      });
-  //  }
+  async talloModal(){
+    const modal = await this.modalCtrl.create({
+      component: TalloPage
+    })
 
-  //  },(err)=>{ /* alert('error al sacar de la bd'+err) */ })
-  // }
+    await modal.present();
+  }
+
+  async tuberculoModal(){
+    const modal = await this.modalCtrl.create({
+      component: TuberculoPage
+    })
+
+    await modal.present();
+  }
+
+
+  async raizModal(){
+    const modal = await this.modalCtrl.create({
+      component: RaizModalPage
+    })
+    await modal.present();
+  }
+  
+
+  async insectosModal(){
+    const modal = await this.modalCtrl.create({
+      component: InsectosModalPage
+    })
+    await modal.present();
+  }
+
+
+  // imagenes
+
+  async plantaImage(){
+    const modal = await this.modalCtrl.create({
+      component: HojasImagePage
+    })
+    await modal.present();
+  }
 
   
 }

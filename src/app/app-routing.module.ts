@@ -92,7 +92,15 @@ const routes: Routes = [
   {
     path: 'hojas',
     loadChildren: () => import('./hojas/hojas.module').then( m => m.HojasPageModule)
+  },  {
+    path: 'modals',
+    loadChildren: () => import('./modals/modals.module').then( m => m.ModalsPageModule)
+  },
+  {
+    path: 'images',
+    loadChildren: () => import('./images/images.module').then( m => m.ImagesPageModule)
   }
+
 ];
 
 @NgModule({

@@ -12,21 +12,22 @@
     </ion-card-content>
   </ion-row>
 
+
   <ion-row class="cuadro">
     <ion-col>
-      <ion-item routerLink="../../../hojas/vdnutricionales">
+      <ion-item routerLink="../../../respuesta3/vdnutricional">
         <ion-label>{{nombre.res12}} </ion-label>
       </ion-item>
     </ion-col>
     <ion-item>
       <ion-icon name="add-circle-outline"></ion-icon>
       <ion-icon
-        (click)="openModal()"
         color="success"
         name="images-outline"
       ></ion-icon>
     </ion-item>
-    <ion-row>
+    <ion-row 
+    (click)="basetalloModal()">
       <img
         style="padding: 10%; width: 80%; height: 100%; position: relative"
         src="../../../assets/imagenes/LOGO INIAP PNG-01.png"
@@ -36,19 +37,19 @@
 
   <ion-row class="cuadro">
     <ion-col>
-      <ion-item routerLink="../../../hojas/pie-negro">
-        <ion-label>{{nombre.res13}}</ion-label>
+      <ion-item routerLink="../../../respuesta3/pienegro">
+        <ion-label>{{nombre.res13}} </ion-label>
       </ion-item>
     </ion-col>
     <ion-item>
       <ion-icon name="add-circle-outline"></ion-icon>
       <ion-icon
-        (click)="preg2Modal()"
         color="success"
         name="images-outline"
       ></ion-icon>
     </ion-item>
-    <ion-row>
+    <ion-row 
+    (click)="manchasnegrasModal()">
       <img
         style="padding: 10%; width: 80%; height: 100%; position: relative"
         src="../../../assets/imagenes/LOGO INIAP PNG-01.png"

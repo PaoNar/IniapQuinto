@@ -1,5 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { ModalController } from '@ionic/angular';
+import { LanchaImagePage } from 'src/app/images/lancha-image/lancha-image.page';
+import { PuntamoradaImagePage } from 'src/app/images/puntamorada-image/puntamorada-image.page';
+import { RoyaImagePage } from 'src/app/images/roya-image/roya-image.page';
+import { TripsImagePage } from 'src/app/images/trips-image/trips-image.page';
 import { LanchaModalPage } from 'src/app/modals/lancha-modal/lancha-modal.page';
 import { PuntaMoradaModalPage } from 'src/app/modals/punta-morada-modal/punta-morada-modal.page';
 import { RoyaModalPage } from 'src/app/modals/roya-modal/roya-modal.page';
@@ -55,4 +59,38 @@ export class Page2Page implements OnInit {
     await modal.present();
   }
 
+  // Imagenes
+
+  async royaImage(){
+    const modal = await this.modalCtrl.create({
+      component: RoyaImagePage
+    })
+
+    await modal.present();
+  }
+
+  async lanchaImage(){
+    const modal = await this.modalCtrl.create({
+      component: LanchaImagePage
+    })
+
+    await modal.present();
+  }
+
+
+  async tripsImage(){
+    const modal = await this.modalCtrl.create({
+      component: TripsImagePage
+    })
+
+    await modal.present();
+  }
+
+  async puntamoradaImage(){
+    const modal = await this.modalCtrl.create({
+      component: PuntamoradaImagePage
+    })
+
+    await modal.present();
+  }
 }

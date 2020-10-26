@@ -8,6 +8,86 @@ const routes: Routes = [
     path: '',
     component: ImagesPage
   },
+  {
+    path: 'hojasminadas-image',
+    loadChildren: () => import('../Images/hojasminadas-image/hojasminadas-image.module').then( m => m.HojasminadasImagePageModule)
+  },
+  {
+    path: 'hojascomidas-image',
+    loadChildren: () => import('../Images/hojascomidas-image/hojascomidas-image.module').then( m => m.HojascomidasImagePageModule)
+  },
+  {
+    path: 'engrosamiento-image',
+    loadChildren: () => import('../Images/engrosamiento-image/engrosamiento-image.module').then( m => m.EngrosamientoImagePageModule)
+  },
+  {
+    path: 'presenciatuberculos-image',
+    loadChildren: () => import('../Images/presenciatuberculos-image/presenciatuberculos-image.module').then( m => m.PresenciatuberculosImagePageModule)
+  },
+  {
+    path: 'huecos-image',
+    loadChildren: () => import('../Images/huecos-image/huecos-image.module').then( m => m.HuecosImagePageModule)
+  },
+  {
+    path: 'psilidos-image',
+    loadChildren: () => import('../Images/psilidos-image/psilidos-image.module').then( m => m.PsilidosImagePageModule)
+  },
+  {
+    path: 'danosfisiologicos-image',
+    loadChildren: () => import('../Images/danosfisiologicos-image/danosfisiologicos-image.module').then( m => m.DanosfisiologicosImagePageModule)
+  },
+  {
+    path: 'pudricion-image',
+    loadChildren: () => import('../Images/pudricion-image/pudricion-image.module').then( m => m.PudricionImagePageModule)
+  },
+  {
+    path: 'presenciaagallas-image',
+    loadChildren: () => import('../Images/presenciaagallas-image/presenciaagallas-image.module').then( m => m.PresenciaagallasImagePageModule)
+  },
+  {
+    path: 'ampollas-image',
+    loadChildren: () => import('../Images/ampollas-image/ampollas-image.module').then( m => m.AmpollasImagePageModule)
+  },
+  {
+    path: 'grietas-image',
+    loadChildren: () => import('../Images/grietas-image/grietas-image.module').then( m => m.GrietasImagePageModule)
+  },
+  {
+    path: 'cavidadinterna-image',
+    loadChildren: () => import('../Images/cavidadinterna-image/cavidadinterna-image.module').then( m => m.CavidadinternaImagePageModule)
+  },
+  {
+    path: 'rajaduras-image',
+    loadChildren: () => import('../Images/rajaduras-image/rajaduras-image.module').then( m => m.RajadurasImagePageModule)
+  },
+  {
+    path: 'agrietamiento-image',
+    loadChildren: () => import('../Images/agrietamiento-image/agrietamiento-image.module').then( m => m.AgrietamientoImagePageModule)
+  },
+  {
+    path: 'corazonhueco-image',
+    loadChildren: () => import('../Images/corazonhueco-image/corazonhueco-image.module').then( m => m.CorazonhuecoImagePageModule)
+  },
+  // {
+  //   path: 'planta-image',
+  //   loadChildren: () => import('../Images/planta-image/planta-image.module').then( m => m.PlantaImagePageModule)
+  // },
+  // {
+  //   path: 'tallos-image',
+  //   loadChildren: () => import('../Images/tallos-image/tallos-image.module').then( m => m.TallosImagePageModule)
+  // },
+  // {
+  //   path: 'tuberculo-image',
+  //   loadChildren: () => import('../Images/tuberculo-image/tuberculo-image.module').then( m => m.TuberculoImagePageModule)
+  // },
+  // {
+  //   path: 'raiz-image',
+  //   loadChildren: () => import('../Images/raiz-image/raiz-image.module').then( m => m.RaizImagePageModule)
+  // },
+  // {
+  //   path: 'insectos-image',
+  //   loadChildren: () => import('../Images/insectos-image/insectos-image.module').then( m => m.InsectosImagePageModule)
+  // },
   // {
   //   path: 'plantaspequenas-image',
   //   loadChildren: () => import('../Images/plantaspequenas-image/plantaspequenas-image.module').then( m => m.PlantaspequenasImagePageModule)

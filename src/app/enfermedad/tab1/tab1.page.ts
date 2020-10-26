@@ -1,12 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 import { ModalController } from '@ionic/angular';
 import { HojasImagePage } from 'src/app/images/hojas-image/hojas-image.page';
-import { HojasPage } from 'src/app/Modals/hojas/hojas.page';
-import { InsectosModalPage } from 'src/app/modals/insectos-modal/insectos-modal.page';
-import { RaizModalPage } from 'src/app/modals/raiz-modal/raiz-modal.page';
-import { TalloPage } from 'src/app/Modals/tallo/tallo.page';
-import { TodaPlantaPage } from 'src/app/Modals/toda-planta/toda-planta.page';
-import { TuberculoPage } from 'src/app/modals/tuberculo/tuberculo.page';
+import { InsectosImagePage } from 'src/app/images/insectos-image/insectos-image.page';
+import { PlantaImagePage } from 'src/app/images/planta-image/planta-image.page';
+import { RaizImagePage } from 'src/app/images/raiz-image/raiz-image.page';
+import { TallosImagePage } from 'src/app/images/tallos-image/tallos-image.page';
+import { TuberculoImagePage } from 'src/app/images/tuberculo-image/tuberculo-image.page';
 import { VariablesService } from '../../servicios/variables.service';
 
 
@@ -24,62 +23,50 @@ export class Tab1Page implements OnInit {
   ngOnInit() {
   }
 
+  // imagenes
 
-  async todalaPlantaModal(){
+  async plantaImage(){
     const modal = await this.modalCtrl.create({
-      component: TodaPlantaPage
+      component: PlantaImagePage
+    })
+    await modal.present();
+  }
+
+  async hojasImage(){
+    const modal = await this.modalCtrl.create({
+      component: HojasImagePage
+    })
+    await modal.present();
+  }
+
+  async talloImage(){
+    const modal = await this.modalCtrl.create({
+      component: TallosImagePage
     })
 
     await modal.present();
   }
 
-  async hojasModal(){
+  async tuberculoImage(){
     const modal = await this.modalCtrl.create({
-      component: HojasPage
+      component: TuberculoImagePage
     })
 
     await modal.present();
   }
 
 
-  async talloModal(){
+  async raizImage(){
     const modal = await this.modalCtrl.create({
-      component: TalloPage
-    })
-
-    await modal.present();
-  }
-
-  async tuberculoModal(){
-    const modal = await this.modalCtrl.create({
-      component: TuberculoPage
-    })
-
-    await modal.present();
-  }
-
-
-  async raizModal(){
-    const modal = await this.modalCtrl.create({
-      component: RaizModalPage
+      component: RaizImagePage
     })
     await modal.present();
   }
   
 
-  async insectosModal(){
+  async insectosImage(){
     const modal = await this.modalCtrl.create({
-      component: InsectosModalPage
-    })
-    await modal.present();
-  }
-
-
-  // imagenes
-
-  async plantaImage(){
-    const modal = await this.modalCtrl.create({
-      component: HojasImagePage
+      component: InsectosImagePage
     })
     await modal.present();
   }

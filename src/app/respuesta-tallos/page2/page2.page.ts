@@ -1,5 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 import { ModalController } from '@ionic/angular';
+import { CostranegraImagePage } from 'src/app/images/costranegra-image/costranegra-image.page';
+import { LanchaImagePage } from 'src/app/images/lancha-image/lancha-image.page';
+import { PienegroImagePage } from 'src/app/images/pienegro-image/pienegro-image.page';
+import { PolillaImagePage } from 'src/app/images/polilla-image/polilla-image.page';
+import { PuntamoradaImagePage } from 'src/app/images/puntamorada-image/puntamorada-image.page';
 import { CostraNegraModalPage } from 'src/app/modals/costra-negra-modal/costra-negra-modal.page';
 import { LanchaModalPage } from 'src/app/modals/lancha-modal/lancha-modal.page';
 import { PienegroModalPage } from 'src/app/modals/pienegro-modal/pienegro-modal.page';
@@ -58,6 +63,50 @@ export class Page2Page implements OnInit {
   async puntamoradaModal(){
     const modal = await this.modalCtrl.create({
       component: PuntaMoradaModalPage
+    })
+
+    await modal.present();
+  }
+
+  // Imagenes
+
+  async lanchaImage(){
+    const modal = await this.modalCtrl.create({
+      component: LanchaImagePage
+    })
+
+    await modal.present();
+  }
+
+
+  async polillaImage(){
+    const modal = await this.modalCtrl.create({
+      component: PolillaImagePage
+    })
+
+    await modal.present();
+  }
+
+  async pienegroImage(){
+    const modal = await this.modalCtrl.create({
+      component: PienegroImagePage
+    })
+
+    await modal.present();
+  }
+
+
+  async costranegraImage(){
+    const modal = await this.modalCtrl.create({
+      component: CostranegraImagePage
+    })
+
+    await modal.present();
+  }
+
+  async puntamoradaImage(){
+    const modal = await this.modalCtrl.create({
+      component: PuntamoradaImagePage
     })
 
     await modal.present();

@@ -1,5 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { ModalController } from '@ionic/angular';
+import { GusanoblancoImagePage } from 'src/app/images/gusanoblanco-image/gusanoblanco-image.page';
+import { PolillaImagePage } from 'src/app/images/polilla-image/polilla-image.page';
+import { PsilidosImagePage } from 'src/app/images/psilidos-image/psilidos-image.page';
+import { PulgonesImagePage } from 'src/app/images/pulgones-image/pulgones-image.page';
 import { GusanoBlancoModalPage } from 'src/app/Modals/gusano-blanco-modal/gusano-blanco-modal.page';
 import { PolillaModalPage } from 'src/app/modals/polilla-modal/polilla-modal.page';
 import { PsilidosModalPage } from 'src/app/modals/psilidos-modal/psilidos-modal.page';
@@ -48,6 +52,40 @@ export class Page1Page implements OnInit {
   async pulgonesModal(){
     const modal = await this.modalCtrl.create({
       component: PulgonesModalPage
+    })
+
+    await modal.present();
+  }
+
+  // Imagenes
+
+  async gusanoblancoImage(){
+    const modal = await this.modalCtrl.create({
+      component: GusanoblancoImagePage
+    })
+
+    await modal.present();
+  }
+
+  async polillaImage(){
+    const modal = await this.modalCtrl.create({
+      component: PolillaImagePage
+    })
+
+    await modal.present();
+  }
+
+  async psilidosImage(){
+    const modal = await this.modalCtrl.create({
+      component: PsilidosImagePage
+    })
+
+    await modal.present();
+  }
+
+  async pulgonesImage(){
+    const modal = await this.modalCtrl.create({
+      component: PulgonesImagePage
     })
 
     await modal.present();

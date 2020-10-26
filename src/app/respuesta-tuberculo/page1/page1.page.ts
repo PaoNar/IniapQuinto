@@ -1,5 +1,14 @@
 import { Component, OnInit } from '@angular/core';
 import { ModalController } from '@ionic/angular';
+import { AmpollasImagePage } from 'src/app/images/ampollas-image/ampollas-image.page';
+import { CavidadinternaImagePage } from 'src/app/images/cavidadinterna-image/cavidadinterna-image.page';
+import { CorazonhuecoImagePage } from 'src/app/images/corazonhueco-image/corazonhueco-image.page';
+import { CostranegraImagePage } from 'src/app/images/costranegra-image/costranegra-image.page';
+import { GrietasImagePage } from 'src/app/images/grietas-image/grietas-image.page';
+import { HuecosImagePage } from 'src/app/images/huecos-image/huecos-image.page';
+import { PresenciaagallasImagePage } from 'src/app/images/presenciaagallas-image/presenciaagallas-image.page';
+import { PudricionImagePage } from 'src/app/images/pudricion-image/pudricion-image.page';
+import { RajadurasImagePage } from 'src/app/images/rajaduras-image/rajaduras-image.page';
 import { AmpollasModalPage } from 'src/app/modals/ampollas-modal/ampollas-modal.page';
 import { CavidadInternaModalPage } from 'src/app/modals/cavidad-interna-modal/cavidad-interna-modal.page';
 import { CostraNegraModalPage } from 'src/app/modals/costra-negra-modal/costra-negra-modal.page';
@@ -25,66 +34,132 @@ export class Page1Page implements OnInit {
   }
 
 
-  async huecosModal(){
+  // async huecosModal(){
+  //   const modal = await this.modalCtrl.create({
+  //     component: HuecosModalPage
+  //   })
+
+  //   await modal.present();
+  // }
+
+  // async pudricionModal(){
+  //   const modal = await this.modalCtrl.create({
+  //     component: PudricionModalPage
+  //   })
+
+  //   await modal.present();
+  // }
+
+
+  // async presenciaagallasModal(){
+  //   const modal = await this.modalCtrl.create({
+  //     component: PresenciaAgallasModalPage
+  //   })
+
+  //   await modal.present();
+  // }
+
+  // async costranegraModal(){
+  //   const modal = await this.modalCtrl.create({
+  //     component: CostraNegraModalPage
+  //   })
+
+  //   await modal.present();
+  // }
+
+
+  // async ampollasModal(){
+  //   const modal = await this.modalCtrl.create({
+  //     component: AmpollasModalPage
+  //   })
+  //   await modal.present();
+  // }
+  
+
+  // async grietasModal(){
+  //   const modal = await this.modalCtrl.create({
+  //     component: GrietasModalPage
+  //   })
+  //   await modal.present();
+  // }
+
+  // async cavidadModal(){
+  //   const modal = await this.modalCtrl.create({
+  //     component: CavidadInternaModalPage
+  //   })
+  //   await modal.present();
+  // }
+  
+
+  // async rajadurasModal(){
+  //   const modal = await this.modalCtrl.create({
+  //     component: RajadurasModalPage
+  //   })
+  //   await modal.present();
+  // }
+
+  // Imagenes
+
+  async huecosImage(){
     const modal = await this.modalCtrl.create({
-      component: HuecosModalPage
+      component: HuecosImagePage
     })
 
     await modal.present();
   }
 
-  async pudricionModal(){
+  async pudricionImage(){
     const modal = await this.modalCtrl.create({
-      component: PudricionModalPage
+      component: PudricionImagePage
     })
 
     await modal.present();
   }
 
 
-  async presenciaagallasModal(){
+  async presenciaagallasImage(){
     const modal = await this.modalCtrl.create({
-      component: PresenciaAgallasModalPage
+      component: PresenciaagallasImagePage
     })
 
     await modal.present();
   }
 
-  async costranegraModal(){
+  async costranegraImage(){
     const modal = await this.modalCtrl.create({
-      component: CostraNegraModalPage
+      component: CostranegraImagePage
     })
 
     await modal.present();
   }
 
 
-  async ampollasModal(){
+  async ampollasImage(){
     const modal = await this.modalCtrl.create({
-      component: AmpollasModalPage
+      component: AmpollasImagePage
     })
     await modal.present();
   }
   
 
-  async grietasModal(){
+  async grietasImage(){
     const modal = await this.modalCtrl.create({
-      component: GrietasModalPage
+      component: GrietasImagePage
     })
     await modal.present();
   }
 
-  async cavidadModal(){
+  async corazonhuecoImage(){
     const modal = await this.modalCtrl.create({
-      component: CavidadInternaModalPage
+      component: CorazonhuecoImagePage
     })
     await modal.present();
   }
   
 
-  async rajadurasModal(){
+  async rajadurasImage(){
     const modal = await this.modalCtrl.create({
-      component: RajadurasModalPage
+      component: RajadurasImagePage
     })
     await modal.present();
   }

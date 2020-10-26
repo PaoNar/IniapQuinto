@@ -18,4 +18,6 @@ export class HojasPage implements OnInit {
     this.modalCtrl.dismiss();
   }
 
+  
+
 }

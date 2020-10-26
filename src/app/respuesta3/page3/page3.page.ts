@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ModalController } from '@ionic/angular';
+import { RoyaImagePage } from 'src/app/images/roya-image/roya-image.page';
+import { RoyaModalPage } from 'src/app/modals/roya-modal/roya-modal.page';
 import { VariablesService } from 'src/app/servicios/variables.service';
 
 @Component({
@@ -9,16 +11,32 @@ import { VariablesService } from 'src/app/servicios/variables.service';
 })
 export class Page3Page implements OnInit {
 
-  constructor(public nombre: VariablesService, private modalCtrl: ModalController) { }
+  constructor(public nombre: VariablesService,
+    private modalCtrl: ModalController) {
+    
+    }
 
-  ngOnInit() {
+    ngOnInit(): void {
+      
+    }
+    
+  async royaModal(){
+    const modal = await this.modalCtrl.create({
+      component: RoyaModalPage
+    })
+
+    await modal.present();
+  }
+
+  // imagenes
+
+  async royaImage(){
+    const modal = await this.modalCtrl.create({
+      component: RoyaImagePage
+    })
+
+    await modal.present();
   }
   
-  // async preg2Modal(){
-  //   const modal = await this.modalCtrl.create({
-  //     component: Pregunta2Page
-  //   })
-
-  //   await modal.present();
-  // }
+ 
 }

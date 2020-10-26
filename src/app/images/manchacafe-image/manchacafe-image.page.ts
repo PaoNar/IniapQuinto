@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ModalController } from '@ionic/angular';
+import { ManchaCafeModalPage } from 'src/app/modals/mancha-cafe-modal/mancha-cafe-modal.page';
 import { VariablesService } from 'src/app/servicios/variables.service';
 
 @Component({
@@ -16,6 +17,13 @@ export class ManchacafeImagePage implements OnInit {
 
   salir(){
     this.modalCtrl.dismiss();
+  }
+  async manchacafeModal(){
+    const modal = await this.modalCtrl.create({
+      component: ManchaCafeModalPage
+    })
+
+    await modal.present();
   }
 
 }

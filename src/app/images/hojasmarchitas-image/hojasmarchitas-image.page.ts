@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ModalController } from '@ionic/angular';
+import { HojasMarchitasModalPage } from 'src/app/modals/hojas-marchitas-modal/hojas-marchitas-modal.page';
 import { VariablesService } from 'src/app/servicios/variables.service';
 
 @Component({
@@ -16,6 +17,14 @@ export class HojasmarchitasImagePage implements OnInit {
 
   salir(){
     this.modalCtrl.dismiss();
+  }
+
+  async hojasmarchitasModal(){
+    const modal = await this.modalCtrl.create({
+      component: HojasMarchitasModalPage
+    })
+
+    await modal.present();
   }
 
 }

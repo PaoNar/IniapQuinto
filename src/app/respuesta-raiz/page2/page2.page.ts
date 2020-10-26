@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ModalController } from '@ionic/angular';
+import { NematodosImagePage } from 'src/app/images/nematodos-image/nematodos-image.page';
 import { NematodosModalPage } from 'src/app/Modals/nematodos-modal/nematodos-modal.page';
 import { VariablesService } from 'src/app/servicios/variables.service';
 
@@ -17,6 +18,14 @@ export class Page2Page implements OnInit {
 
     ngOnInit(): void {
       
+    }
+
+    async nematodosImage(){
+      const modal = await this.modalCtrl.create({
+        component: NematodosImagePage
+      })
+  
+      await modal.present();
     }
     
   async nematodosModal(){

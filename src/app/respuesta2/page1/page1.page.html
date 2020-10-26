@@ -1,8 +1,4 @@
-<!-- <ion-header>
-  <ion-toolbar>
-    <ion-title></ion-title>
-  </ion-toolbar>
-</ion-header> -->
+
 
 <ion-content>
   <ion-row>
@@ -11,8 +7,7 @@
 
   <ion-row class="cuadro">
     <ion-col>
-      <!-- <ion-button color="dark" fill="outline" routerLink="../../../respuesta" >Respuesta1</ion-button> -->
-      <ion-item routerLink="../../../respuesta3/page1">
+       <ion-item routerLink="../../../respuesta3/page1">
         <ion-label>{{nombre.res9}}</ion-label>
       </ion-item>
     </ion-col>
@@ -24,7 +19,8 @@
         name="images-outline"
       ></ion-icon>
     </ion-item>
-    <ion-row (click)="manchacafeModal()">
+    <ion-row routerLink="../../../respuesta3/page1">
+      <!-- (click)="manchacafeModal()" -->
       <img
         src="../../../assets/imagenes/foto11.jpg"
       />
@@ -33,7 +29,6 @@
 
   <ion-row class="cuadro">
     <ion-col>
-      <!-- <ion-button color="dark" fill="outline" routerLink="../../../respuesta">En toda la planta</ion-button> -->
       <ion-item routerLink="../../../respuesta3/page3">
         <ion-label>{{nombre.res10}} </ion-label>
       </ion-item>
@@ -46,9 +41,9 @@
         name="images-outline"
       ></ion-icon>
     </ion-item>
-    <ion-row (click)="pustulasModal()">
+    <ion-row routerLink="../../../respuesta3/page3" >
+      <!-- (click)="pustulasModal()" -->
       <img
-        style="padding: 10%; width: 80%; height: 100%; position: relative"
         src="../../../assets/imagenes/LOGO INIAP PNG-01.png"
       />
     </ion-row>
@@ -70,7 +65,8 @@
       ></ion-icon>
     </ion-item>
 
-    <ion-row (click)="manchasplateadoModal()">
+    <ion-row routerLink="../../../respuesta3/page4" >
+      <!-- (click)="manchasplateadoModal()" -->
       <img
         src="../../../assets/imagenes/LOGO INIAP PNG-01.png"
       />
@@ -79,7 +75,7 @@
 
   <ion-row class="cuadro">
     <ion-col>
-      <ion-item routerLink="../../../respuesta3/page5">
+      <ion-item routerLink="../../../respuesta3/page2">
         <ion-label>{{nombre.res3}} </ion-label>
       </ion-item>
     </ion-col>
@@ -91,7 +87,8 @@
         name="images-outline"
       ></ion-icon>
     </ion-item>
-    <ion-row (click)="hojasmoradasModal()">
+    <ion-row routerLink="../../../respuesta3/page2" >
+      <!-- (click)="hojasmoradasModal()" -->
       <img
         src="../../../assets/imagenes/foto113.jpg"
       />

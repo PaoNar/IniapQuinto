@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ModalController } from '@ionic/angular';
+import { PustulasModalPage } from 'src/app/modals/pustulas-modal/pustulas-modal.page';
 import { VariablesService } from 'src/app/servicios/variables.service';
 
 @Component({
@@ -16,6 +17,14 @@ export class PustulasImagePage implements OnInit {
 
   salir(){
     this.modalCtrl.dismiss();
+  }
+
+  async pustulasModal(){
+    const modal = await this.modalCtrl.create({
+      component: PustulasModalPage
+    })
+
+    await modal.present();
   }
 
 }

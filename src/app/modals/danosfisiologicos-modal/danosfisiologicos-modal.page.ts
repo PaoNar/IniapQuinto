@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ModalController } from '@ionic/angular';
+import { VariablesService } from 'src/app/servicios/variables.service';
 
 @Component({
   selector: 'app-danosfisiologicos-modal',
@@ -7,9 +9,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DanosfisiologicosModalPage implements OnInit {
 
-  constructor() { }
+  constructor(private modalCtrl: ModalController, public nombre: VariablesService) { }
 
   ngOnInit() {
+  }
+
+  salir(){
+    this.modalCtrl.dismiss();
   }
 
 }

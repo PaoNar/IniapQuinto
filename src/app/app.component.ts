@@ -16,15 +16,11 @@ export class AppComponent {
   constructor(
      platform: Platform, statusBar: StatusBar, splashScreen: SplashScreen,
     public nombre: VariablesService,
-    
+  ) {
 
-  ) {}
-
-  // platform.ready().then(() => {
-  //   StatusBar.styleDefault();
-  //   SplashScreen.hide();
-  // });
-
-  
- 
+  platform.ready().then(() => {
+    statusBar.styleDefault();
+    splashScreen.hide();
+  });
+ }
 }

@@ -9,17 +9,17 @@
 <ion-content>
   <ion-row >
     <ion-col>
-      <ion-item routerLink="#" >
+      <ion-item  >
         <ion-label> {{nombre.preg16}} </ion-label>
       </ion-item>
     </ion-col>
     <ion-item >
       <ion-icon name="add-circle-outline"></ion-icon>
-      <ion-icon (click)="preg2Modal()" color="success" name="images-outline"></ion-icon>
+      <ion-icon (click)="tripsImage()" color="success" name="images-outline"></ion-icon>
     </ion-item>
 
-    <ion-row>
-      <img style="padding:10%; width: 95%; height: 100%; position: relative;"  src="../../../assets/imagenes/trips.png">
+    <ion-row (click)="tripsModal()">
+      <img   src="../../../assets/imagenes/foto21.jpg">
     </ion-row>
   </ion-row>
 

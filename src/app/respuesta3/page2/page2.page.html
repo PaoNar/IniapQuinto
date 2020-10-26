@@ -9,17 +9,17 @@
 <ion-content>
   <ion-row>
     <ion-col>
-      <ion-item routerLink="#" >
+      <ion-item >
         <ion-label>{{nombre.preg13}} </ion-label>
       </ion-item>
     </ion-col>
     <ion-item >
       <ion-icon name="add-circle-outline"></ion-icon>
-      <ion-icon (click)="openModal()" color="success" name="images-outline"></ion-icon>
+      <ion-icon (click)="puntamoradaImage()" color="success" name="images-outline"></ion-icon>
     </ion-item>
 
-    <ion-row>
-      <img style="padding:10%; width: 80%; height: 100%; position: relative;"  src="../../../assets/imagenes/LOGO INIAP PNG-01.png">
+    <ion-row  (click)="puntamoradaModal()">
+      <img  src="../../../assets/imagenes/foto111.jpg">
     </ion-row>
   </ion-row>
 

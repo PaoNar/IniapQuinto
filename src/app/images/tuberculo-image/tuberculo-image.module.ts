@@ -4,17 +4,17 @@ import { FormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
 
-import { Page5PageRoutingModule } from './page5-routing.module';
+import { TuberculoImagePageRoutingModule } from './tuberculo-image-routing.module';
 
-import { Page5Page } from './page5.page';
+import { TuberculoImagePage } from './tuberculo-image.page';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    Page5PageRoutingModule
+    TuberculoImagePageRoutingModule
   ],
-  declarations: [Page5Page]
+  declarations: [TuberculoImagePage]
 })
-export class Page5PageModule {}
+export class TuberculoImagePageModule {}

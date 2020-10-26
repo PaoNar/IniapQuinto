@@ -14,7 +14,7 @@
 
   <ion-row class="cuadro">
     <ion-col>
-      <ion-item routerLink="../../../respuesta2">
+      <ion-item routerLink="../../../respuesta2-hojas">
         <ion-label>{{nombre.res2}} </ion-label>
       </ion-item>
     </ion-col>
@@ -22,16 +22,16 @@
     <ion-item>
       <ion-icon name="add-circle-outline"></ion-icon>
       <ion-icon
-      (click)="hojasmanchasImage()"
+      (click)="hojasmanchaImage()" 
         color="success"
         name="images-outline"
       ></ion-icon>
     </ion-item>
 
-    <ion-row (click)="hojasmanchaModal()">
+    <ion-row routerLink="../../../respuesta2-hojas" >
+      <!-- (click)="hojasmanchaModal()" -->
       <img
-        style="padding: 10%; width: 80%; height: 100%; position: relative"
-        src="../../../assets/imagenes/LOGO INIAP PNG-01.png"
+        src="../../../assets/imagenes/foto1.jpg"
       />
     </ion-row>
   </ion-row>
@@ -39,7 +39,7 @@
   <ion-row class="cuadro">
     <ion-col>
       <!-- <ion-button color="dark" fill="outline" routerLink="../../../respuesta">En toda la planta</ion-button> -->
-      <ion-item routerLink="../../../respuesta3/page2">
+      <ion-item routerLink="../../../hojas/punta-morada">
         <ion-label>{{nombre.res3}}</ion-label>
       </ion-item>
     </ion-col>
@@ -47,24 +47,23 @@
     <ion-item>
       <ion-icon name="add-circle-outline"></ion-icon>
       <ion-icon
-      (click)="hojasmoradasImage()"
+      (click)="hojasmoradasImage()" 
         color="success"
         name="images-outline"
       ></ion-icon>
     </ion-item>
 
-    <ion-row (click)="hojasmoradasModal()">
+    <ion-row routerLink="../../../hojas/punta-morada2" >
+      <!-- (click)="hojasmoradasModal()" -->
       <img
-        style="padding: 10%; width: 80%; height: 100%; position: relative"
-        src="../../../assets/imagenes/LOGO INIAP PNG-01.png"
+        src="../../../assets/imagenes/foto113.jpg"
       />
     </ion-row>
   </ion-row>
 
   <ion-row class="cuadro">
     <ion-col>
-      <!-- <ion-button color="dark" fill="outline"  routerLink="../../../respuesta">Respuesta3</ion-button> -->
-      <ion-item routerLink="../../../hojas-amarillas">
+      <ion-item routerLink="../../../hojas2-amarillas">
         <ion-label>{{nombre.res4}}</ion-label>
       </ion-item>
     </ion-col>
@@ -72,23 +71,23 @@
     <ion-item>
       <ion-icon name="add-circle-outline"></ion-icon>
       <ion-icon
+      (click)="hojasamarillasImage()" 
         color="success"
         name="images-outline"
       ></ion-icon>
     </ion-item>
 
-    <ion-row (click)="hojasamarillasModal()">
+    <ion-row routerLink="../../../hojas2-amarillas" >
+      <!-- (click)="hojasamarillasModal()" -->
       <img
-        style="padding: 10%; width: 80%; height: 100%; position: relative"
-        src="../../../assets/imagenes/LOGO INIAP PNG-01.png"
+        src="../../../assets/imagenes/foto63.jpg"
       />
     </ion-row>
   </ion-row>
 
   <ion-row class="cuadro">
     <ion-col>
-      <!-- <ion-button color="dark" fill="outline"  routerLink="../../../respuesta">Respuesta3</ion-button> -->
-      <ion-item routerLink="../../../respuesta3/heladas">
+      <ion-item routerLink="../../../hojas/heladas">
         <ion-label>{{nombre.res5}}</ion-label>
       </ion-item>
     </ion-col>
@@ -96,15 +95,16 @@
     <ion-item>
       <ion-icon name="add-circle-outline"></ion-icon>
       <ion-icon
+      (click)="hojasmarchitasImage()" 
         color="success"
         name="images-outline"
       ></ion-icon>
     </ion-item>
 
-    <ion-row (click)="hojasmarchitasModal()">
+    <ion-row routerLink="../../../hojas/heladas" >
+      <!-- (click)="hojasmarchitasModal()" -->
       <img
-        style="padding: 10%; width: 80%; height: 100%; position: relative"
-        src="../../../assets/imagenes/LOGO INIAP PNG-01.png"
+        src="../../../assets/imagenes/foto81.jpg"
       />
     </ion-row>
   </ion-row>
@@ -119,14 +119,15 @@
     <ion-item>
       <ion-icon name="add-circle-outline"></ion-icon>
       <ion-icon
+      (click)="hojasmordidasImage()"
         color="success"
         name="images-outline"
       ></ion-icon>
     </ion-item>
 
-    <ion-row (click)="hojasmordidasModal()">
+    <ion-row routerLink="../../../hojas-mordidas" >
+      <!-- (click)="hojasmordidasModal()" -->
       <img
-        style="padding: 10%; width: 80%; height: 100%; position: relative"
         src="../../../assets/imagenes/LOGO INIAP PNG-01.png"
       />
     </ion-row>
@@ -134,8 +135,7 @@
 
   <ion-row class="cuadro">
     <ion-col>
-      <!-- <ion-button color="dark" fill="outline"  routerLink="../../../respuesta">Respuesta3</ion-button> -->
-      <ion-item routerLink="../../../respuesta3/virosis2-planta">
+      <ion-item routerLink="../../../hojas/virosis2">
         <ion-label>{{nombre.res7}}</ion-label>
       </ion-item>
     </ion-col>
@@ -143,14 +143,15 @@
     <ion-item>
       <ion-icon name="add-circle-outline"></ion-icon>
       <ion-icon
+      (click)="hojasmosaicoImage()" 
         color="success"
         name="images-outline"
       ></ion-icon>
     </ion-item>
 
-    <ion-row (click)="mosaicoModal()">
+    <ion-row routerLink="../../../hojas/virosis2" >
+      <!-- (click)="mosaicoModal()" -->
       <img
-        style="padding: 10%; width: 80%; height: 100%; position: relative"
         src="../../../assets/imagenes/LOGO INIAP PNG-01.png"
       />
     </ion-row>
@@ -158,8 +159,7 @@
 
   <ion-row class="cuadro">
     <ion-col>
-      <!-- <ion-button color="dark" fill="outline"  routerLink="../../../respuesta">Respuesta3</ion-button> -->
-      <ion-item routerLink="../../../respuesta3/virosis">
+       <ion-item routerLink="../../../hojas/virosis">
         <ion-label>{{nombre.res8}}</ion-label>
       </ion-item>
     </ion-col>
@@ -167,14 +167,15 @@
     <ion-item>
       <ion-icon name="add-circle-outline"></ion-icon>
       <ion-icon
+      (click)="enrrollamientoImage()" 
         color="success"
         name="images-outline"
       ></ion-icon>
     </ion-item>
-    <ion-row (click)="enrollamientoModal()">
+    <ion-row routerLink="../../../hojas/virosis" >
+      <!-- (click)="enrollamientoModal()" -->
       <img
-        style="padding: 10%; width: 80%; height: 100%; position: relative"
-        src="../../../assets/imagenes/LOGO INIAP PNG-01.png"
+        src="../../../assets/imagenes/foto61.jpg"
       />
     </ion-row>
   </ion-row>

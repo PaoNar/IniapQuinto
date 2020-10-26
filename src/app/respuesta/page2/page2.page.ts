@@ -142,7 +142,6 @@ export class Page2Page implements OnInit {
     await modal.present();
   }
 
-
   // imagenes
 
   async royaImage(){

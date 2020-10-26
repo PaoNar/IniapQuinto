@@ -30,63 +30,6 @@ export class Page1Page implements OnInit {
   ngOnInit() {
   }
 
-
-  async hojasmanchaModal(){
-    const modal = await this.modalCtrl.create({
-      component: HojasManchasPage
-    })
-
-    await modal.present();
-  }
-
-  async hojasmoradasModal(){
-    const modal = await this.modalCtrl.create({
-      component: HojasMoradasModalPage
-    })
-
-    await modal.present();
-  }
-
-
-  async hojasamarillasModal(){
-    const modal = await this.modalCtrl.create({
-      component: HojasAmarillasModalPage
-    })
-
-    await modal.present();
-  }
-
-  async hojasmarchitasModal(){
-    const modal = await this.modalCtrl.create({
-      component: HojasMarchitasModalPage
-    })
-
-    await modal.present();
-  }
-
-
-  async plantaspequenasModal(){
-    const modal = await this.modalCtrl.create({
-      component: PlantaspequenasModalPage
-    })
-    await modal.present();
-  }
-  
-
-  async mosaicoModal(){
-    const modal = await this.modalCtrl.create({
-      component: MosaicoModalPage
-    })
-    await modal.present();
-  }
-
-  async enrollamientoModal(){
-    const modal = await this.modalCtrl.create({
-      component: EnrrolamientoModalPage
-    })
-    await modal.present();
-  }
-
   // imagenes
 
   async hojasmanchaImage(){

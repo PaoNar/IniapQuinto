@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { ModalController } from '@ionic/angular';
+import { VirosisImagePage } from 'src/app/images/virosis-image/virosis-image.page';
+import { VirosisModalPage } from 'src/app/modals/virosis-modal/virosis-modal.page';
 import { VariablesService } from 'src/app/servicios/variables.service';
 
 @Component({
@@ -8,9 +11,27 @@ import { VariablesService } from 'src/app/servicios/variables.service';
 })
 export class Virosis2Page implements OnInit {
 
-  constructor(public nombre: VariablesService) { }
+  constructor(public nombre: VariablesService,
+    private modalCtrl: ModalController) {
+    }
 
-  ngOnInit() {
+    ngOnInit(): void {}
+    
+  async virosisModal(){
+    const modal = await this.modalCtrl.create({
+      component: VirosisModalPage
+    })
+
+    await modal.present();
   }
 
+  // imagenes
+
+  async virosisImage(){
+    const modal = await this.modalCtrl.create({
+      component: VirosisImagePage
+    })
+
+    await modal.present();
+  }
 }

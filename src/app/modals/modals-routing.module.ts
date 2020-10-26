@@ -19,6 +19,18 @@ const routes: Routes = [
     redirectTo: '/models/',
     pathMatch: 'full'
   },
+  {
+    path: 'agrietamiento-modal',
+    loadChildren: () => import('../Modals/agrietamiento-modal/agrietamiento-modal.module').then( m => m.AgrietamientoModalPageModule)
+  },
+  {
+    path: 'corazonhueco-modal',
+    loadChildren: () => import('../Modals/corazonhueco-modal/corazonhueco-modal.module').then( m => m.CorazonhuecoModalPageModule)
+  },
+  // {
+  //   path: 'pulguilla-modal',
+  //   loadChildren: () => import('../Modals/pulguilla-modal/pulguilla-modal.module').then( m => m.PulguillaModalPageModule)
+  // },
   // {
   //   path: 'hojas',
   //   loadChildren: () => import('../Modals/hojas/hojas.module').then( m => m.HojasPageModule)

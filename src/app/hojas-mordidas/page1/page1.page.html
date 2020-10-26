@@ -1,8 +1,3 @@
-<!-- <ion-header>
-  <ion-toolbar>
-    <ion-title></ion-title>
-  </ion-toolbar>
-</ion-header> -->
 
 <ion-content>
   <ion-row>
@@ -21,15 +16,15 @@
     <ion-item>
       <ion-icon name="add-circle-outline"></ion-icon>
       <ion-icon
-        
+      (click)="hojasminadasImage()"
         color="success"
         name="images-outline"
       ></ion-icon>
     </ion-item>
-    <ion-row (click)="hojasminadasModal()">
+    <ion-row routerLink="../../../hojas/mosca-minadora" >
+      <!-- (click)="hojasminadasModal()" -->
       <img
-        style="padding: 10%; width: 80%; height: 100%; position: relative"
-        src="../../../assets/imagenes/LOGO INIAP PNG-01.png"
+        src="../../../assets/imagenes/foto41.jpg"
       />
     </ion-row>
   </ion-row>
@@ -44,14 +39,15 @@
     <ion-item>
       <ion-icon name="add-circle-outline"></ion-icon>
       <ion-icon
+      (click)="hojascomidasImage()"
         color="success"
         name="images-outline"
       ></ion-icon>
     </ion-item>
-    <ion-row (click)="hojascomidasModal()">
+    <ion-row routerLink="../../../hojas/gusano-blanco">
+      <!-- (click)="hojascomidasModal()" -->
       <img
-        style="padding: 10%; width: 80%; height: 100%; position: relative"
-        src="../../../assets/imagenes/LOGO INIAP PNG-01.png"
+        src="../../../assets/imagenes/foto31.jpg"
       />
     </ion-row>
   </ion-row>
@@ -66,14 +62,15 @@
     <ion-item>
       <ion-icon name="add-circle-outline"></ion-icon>
       <ion-icon
+      (click)="presenciabolitasImage()"
         color="success"
         name="images-outline"
       ></ion-icon>
     </ion-item>
-    <ion-row (click)="presenciabolitasModal()">
+    <ion-row routerLink="../../../hojas/pulguilla" >
+      <!-- (click)="presenciabolitasModal()" -->
       <img
-        style="padding: 10%; width: 80%; height: 100%; position: relative"
-        src="../../../assets/imagenes/LOGO INIAP PNG-01.png"
+        src="../../../assets/imagenes/foto131.jpg"
       />
     </ion-row>
   </ion-row>

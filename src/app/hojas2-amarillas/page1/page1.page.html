@@ -1,8 +1,3 @@
-<!-- <ion-header>
-  <ion-toolbar>
-    <ion-title></ion-title>
-  </ion-toolbar>
-</ion-header> -->
 
 <ion-content>
   <ion-row>
@@ -15,44 +10,44 @@
 
   <ion-row class="cuadro">
     <ion-col>
-      <ion-item routerLink="../../../respuesta3/vdnutricional">
+      <ion-item routerLink="../../../hojas/vdnutricional">
         <ion-label>{{nombre.res12}} </ion-label>
       </ion-item>
     </ion-col>
     <ion-item>
       <ion-icon name="add-circle-outline"></ion-icon>
       <ion-icon
+      (click)="basetalloImage()"
         color="success"
         name="images-outline"
       ></ion-icon>
     </ion-item>
-    <ion-row 
-    (click)="basetalloModal()">
+    <ion-row routerLink="../../../hojas/vdnutricionales" >
+      <!-- (click)="basetalloModal()" -->
       <img
-        style="padding: 10%; width: 80%; height: 100%; position: relative"
-        src="../../../assets/imagenes/LOGO INIAP PNG-01.png"
+        src="../../../assets/imagenes/foto61.jpg"
       />
     </ion-row>
   </ion-row>
 
   <ion-row class="cuadro">
     <ion-col>
-      <ion-item routerLink="../../../respuesta3/pienegro">
+      <ion-item routerLink="../../../hojas/pie-negro">
         <ion-label>{{nombre.res13}} </ion-label>
       </ion-item>
     </ion-col>
     <ion-item>
       <ion-icon name="add-circle-outline"></ion-icon>
       <ion-icon
+      (click)="manchasnegrasImage()"
         color="success"
         name="images-outline"
       ></ion-icon>
     </ion-item>
-    <ion-row 
-    (click)="manchasnegrasModal()">
+    <ion-row routerLink="../../../hojas/pie-negro" >
+      <!-- (click)="manchasnegrasModal()" -->
       <img
-        style="padding: 10%; width: 80%; height: 100%; position: relative"
-        src="../../../assets/imagenes/LOGO INIAP PNG-01.png"
+        src="../../../assets/imagenes/foto71.jpg"
       />
     </ion-row>
   </ion-row>

@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ModalController } from '@ionic/angular';
+import { PresenciabolitasImagePage } from 'src/app/images/presenciabolitas-image/presenciabolitas-image.page';
 import { PresenciaBolitasModalPage } from 'src/app/modals/presencia-bolitas-modal/presencia-bolitas-modal.page';
 import { VariablesService } from 'src/app/servicios/variables.service';
 
@@ -18,9 +19,9 @@ export class Page1Page implements OnInit {
   }
 
 
-  async presenciabolitasModal(){
+  async presenciabolitasImage(){
     const modal = await this.modalCtrl.create({
-      component: PresenciaBolitasModalPage
+      component: PresenciabolitasImagePage
     })
 
     await modal.present();

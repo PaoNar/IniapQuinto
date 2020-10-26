@@ -1,10 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 import { ModalController } from '@ionic/angular';
-import { EngrosamientoModalPage } from 'src/app/modals/engrosamiento-modal/engrosamiento-modal.page';
-import { HuecosModalPage } from 'src/app/modals/huecos-modal/huecos-modal.page';
-import { ManchaCafeModalPage } from 'src/app/modals/mancha-cafe-modal/mancha-cafe-modal.page';
-import { ManchaNegraModalPage } from 'src/app/modals/mancha-negra-modal/mancha-negra-modal.page';
-import { PresenciaTuberculosModalPage } from 'src/app/modals/presencia-tuberculos-modal/presencia-tuberculos-modal.page';
+import { EngrosamientoImagePage } from 'src/app/images/engrosamiento-image/engrosamiento-image.page';
+import { HuecosImagePage } from 'src/app/images/huecos-image/huecos-image.page';
+import { ManchacafeImagePage } from 'src/app/images/manchacafe-image/manchacafe-image.page';
+import { ManchasnegrasImagePage } from 'src/app/images/manchasnegras-image/manchasnegras-image.page';
+import { PresenciatuberculosImagePage } from 'src/app/images/presenciatuberculos-image/presenciatuberculos-image.page';
 import { VariablesService } from 'src/app/servicios/variables.service';
 
 @Component({
@@ -21,43 +21,43 @@ export class Page1Page implements OnInit {
   ngOnInit() {
   }
 
-  async manchanegraModal(){
+  async manchanegraImage(){
     const modal = await this.modalCtrl.create({
-      component: ManchaNegraModalPage
+      component: ManchasnegrasImagePage
     })
 
     await modal.present();
   }
 
 
-  async manchacafeModal(){
+  async manchacafeImage(){
     const modal = await this.modalCtrl.create({
-      component: ManchaCafeModalPage
+      component: ManchacafeImagePage
     })
 
     await modal.present();
   }
 
-  async engrosamientoModal(){
+  async engrosamientoImage(){
     const modal = await this.modalCtrl.create({
-      component: EngrosamientoModalPage
+      component: EngrosamientoImagePage
     })
 
     await modal.present();
   }
 
 
-  async presenciatuberculosModal(){
+  async presenciatuberculosImage(){
     const modal = await this.modalCtrl.create({
-      component: PresenciaTuberculosModalPage
+      component: PresenciatuberculosImagePage
     })
 
     await modal.present();
   }
 
-  async huecosModal(){
+  async huecosImage(){
     const modal = await this.modalCtrl.create({
-      component: HuecosModalPage
+      component: HuecosImagePage
     })
 
     await modal.present();

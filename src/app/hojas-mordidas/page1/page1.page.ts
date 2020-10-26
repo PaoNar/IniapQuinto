@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { ModalController } from '@ionic/angular';
-import { HojasComidasModalPage } from 'src/app/modals/hojas-comidas-modal/hojas-comidas-modal.page';
-import { HojasMinadasModalPage } from 'src/app/Modals/hojas-minadas-modal/hojas-minadas-modal.page';
-import { PresenciaBolitasModalPage } from 'src/app/modals/presencia-bolitas-modal/presencia-bolitas-modal.page';
+import { HojascomidasImagePage } from 'src/app/images/hojascomidas-image/hojascomidas-image.page';
+import { HojasminadasImagePage } from 'src/app/images/hojasminadas-image/hojasminadas-image.page';
+import { PresenciabolitasImagePage } from 'src/app/images/presenciabolitas-image/presenciabolitas-image.page';
 import { VariablesService } from 'src/app/servicios/variables.service';
 
 @Component({
@@ -20,25 +20,51 @@ export class Page1Page implements OnInit {
   }
 
 
-  async hojasminadasModal(){
+  // async hojasminadasModal(){
+  //   const modal = await this.modalCtrl.create({
+  //     component: HojasMinadasModalPage
+  //   })
+
+  //   await modal.present();
+  // }
+
+  // async hojascomidasModal(){
+  //   const modal = await this.modalCtrl.create({
+  //     component: HojasComidasModalPage
+  //   })
+
+  //   await modal.present();
+  // }
+
+  // async presenciabolitasModal(){
+  //   const modal = await this.modalCtrl.create({
+  //     component: PresenciaBolitasModalPage
+  //   })
+
+  //   await modal.present();
+  // }
+
+  // Imagenes
+
+  async hojasminadasImage(){
     const modal = await this.modalCtrl.create({
-      component: HojasMinadasModalPage
+      component: HojasminadasImagePage
     })
 
     await modal.present();
   }
 
-  async hojascomidasModal(){
+  async hojascomidasImage(){
     const modal = await this.modalCtrl.create({
-      component: HojasComidasModalPage
+      component: HojascomidasImagePage
     })
 
     await modal.present();
   }
 
-  async presenciabolitasModal(){
+  async presenciabolitasImage(){
     const modal = await this.modalCtrl.create({
-      component: PresenciaBolitasModalPage
+      component: PresenciabolitasImagePage
     })
 
     await modal.present();

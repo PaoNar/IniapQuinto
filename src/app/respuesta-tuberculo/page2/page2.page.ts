@@ -1,5 +1,12 @@
 import { Component, OnInit } from '@angular/core';
 import { ModalController } from '@ionic/angular';
+import { CarbonImagePage } from 'src/app/images/carbon-image/carbon-image.page';
+import { CostranegraImagePage } from 'src/app/images/costranegra-image/costranegra-image.page';
+import { DanosfisiologicosImagePage } from 'src/app/images/danosfisiologicos-image/danosfisiologicos-image.page';
+import { GusanoblancoImagePage } from 'src/app/images/gusanoblanco-image/gusanoblanco-image.page';
+import { PienegroImagePage } from 'src/app/images/pienegro-image/pienegro-image.page';
+import { PolillaImagePage } from 'src/app/images/polilla-image/polilla-image.page';
+import { SarnapolvorientaImagePage } from 'src/app/images/sarnapolvorienta-image/sarnapolvorienta-image.page';
 import { CarbonModalPage } from 'src/app/modals/carbon-modal/carbon-modal.page';
 import { CostraNegraModalPage } from 'src/app/modals/costra-negra-modal/costra-negra-modal.page';
 import { DanosfisiologicosModalPage } from 'src/app/modals/danosfisiologicos-modal/danosfisiologicos-modal.page';
@@ -76,6 +83,65 @@ export class Page2Page implements OnInit {
   async danosfisiologicosModal(){
     const modal = await this.modalCtrl.create({
       component: DanosfisiologicosModalPage
+    })
+
+    await modal.present();
+  }
+
+  // Imagenes
+  async carbonImage(){
+    const modal = await this.modalCtrl.create({
+      component: CarbonImagePage
+    })
+
+    await modal.present();
+  }
+
+
+  async polillaImage(){
+    const modal = await this.modalCtrl.create({
+      component: PolillaImagePage
+    })
+
+    await modal.present();
+  }
+
+  async pienegroImage(){
+    const modal = await this.modalCtrl.create({
+      component: PienegroImagePage
+    })
+
+    await modal.present();
+  }
+
+
+  async costranegraImage(){
+    const modal = await this.modalCtrl.create({
+      component: CostranegraImagePage
+    })
+
+    await modal.present();
+  }
+
+  async gusanoblancoImage(){
+    const modal = await this.modalCtrl.create({
+      component: GusanoblancoImagePage
+    })
+
+    await modal.present();
+  }
+
+  async sarnapolvorientaImage(){
+    const modal = await this.modalCtrl.create({
+      component: SarnapolvorientaImagePage
+    })
+
+    await modal.present();
+  }
+
+  async danosfisiologicosImage(){
+    const modal = await this.modalCtrl.create({
+      component: DanosfisiologicosImagePage
     })
 
     await modal.present();

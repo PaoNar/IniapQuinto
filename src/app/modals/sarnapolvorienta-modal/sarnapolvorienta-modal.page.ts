@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ModalController } from '@ionic/angular';
+import { VariablesService } from 'src/app/servicios/variables.service';
 
 @Component({
   selector: 'app-sarnapolvorienta-modal',
@@ -6,10 +8,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./sarnapolvorienta-modal.page.scss'],
 })
 export class SarnapolvorientaModalPage implements OnInit {
-
-  constructor() { }
+  constructor(private modalCtrl: ModalController, public nombre: VariablesService) { }
 
   ngOnInit() {
+  }
+
+  salir(){
+    this.modalCtrl.dismiss();
   }
 
 }

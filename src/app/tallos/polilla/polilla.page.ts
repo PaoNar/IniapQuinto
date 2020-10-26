@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { ModalController } from '@ionic/angular';
+import { PolillaImagePage } from 'src/app/images/polilla-image/polilla-image.page';
+import { PolillaModalPage } from 'src/app/modals/polilla-modal/polilla-modal.page';
 import { VariablesService } from 'src/app/servicios/variables.service';
 
 @Component({
@@ -8,9 +11,29 @@ import { VariablesService } from 'src/app/servicios/variables.service';
 })
 export class PolillaPage implements OnInit {
 
-  constructor(public nombre: VariablesService) { }
+  constructor(public nombre: VariablesService,
+    private modalCtrl: ModalController) {
+    
+    }
 
-  ngOnInit() {
-  }
+    ngOnInit(): void {}
+    
+    async polillaModal(){
+      const modal = await this.modalCtrl.create({
+        component: PolillaModalPage
+      })
+  
+      await modal.present();
+    }
+  
+    // imagenes
+  
+    async polillaImage(){
+      const modal = await this.modalCtrl.create({
+        component: PolillaImagePage
+      })
+  
+      await modal.present();
+    }
 
 }

@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ModalController } from '@ionic/angular';
+import { NematodosModalPage } from 'src/app/Modals/nematodos-modal/nematodos-modal.page';
 
 @Component({
   selector: 'app-nematodos-image',
@@ -15,6 +16,14 @@ export class NematodosImagePage implements OnInit {
 
   salir(){
     this.modalCtrl.dismiss();
+  }
+
+  async nematodosModal(){
+    const modal = await this.modalCtrl.create({
+      component: NematodosModalPage
+    })
+
+    await modal.present();
   }
 
 }

@@ -41,13 +41,13 @@ export class Page2Page implements OnInit {
   }
 
 
-  async deficienciasnutricionalesModal(){
-    const modal = await this.modalCtrl.create({
-      component: DeficienciasnutricionalesModalPage
-    })
+  // async deficienciasnutricionalesModal(){
+  //   const modal = await this.modalCtrl.create({
+  //     component: DeficienciasnutricionalesModalPage
+  //   })
 
-    await modal.present();
-  }
+  //   await modal.present();
+  // }
 
   // imagenes
 
@@ -67,13 +67,13 @@ export class Page2Page implements OnInit {
     await modal.present();
   }
 
-  async deficienciasImage(){
-    const modal = await this.modalCtrl.create({
-      component: DeficienciasImagePage
-    })
+  // async deficienciasImage(){
+  //   const modal = await this.modalCtrl.create({
+  //     component: DeficienciasImagePage
+  //   })
 
-    await modal.present();
-  }
+  //   await modal.present();
+  // }
 
 
 }

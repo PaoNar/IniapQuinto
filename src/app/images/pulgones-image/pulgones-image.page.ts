@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ModalController } from '@ionic/angular';
+import { PulgonesModalPage } from 'src/app/modals/pulgones-modal/pulgones-modal.page';
 
 @Component({
   selector: 'app-pulgones-image',
@@ -15,6 +16,13 @@ export class PulgonesImagePage implements OnInit {
 
   salir(){
     this.modalCtrl.dismiss();
+  }
+
+  async pulgonesModal(){
+    const modal = await this.modalCtrl.create({
+      component: PulgonesModalPage
+    })
+    await modal.present();
   }
 
 }

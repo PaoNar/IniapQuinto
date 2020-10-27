@@ -28,42 +28,9 @@ export class Page1Page implements OnInit {
     ngOnInit(): void {
       
     }
-    
-  async manchacafeModal(){
-    const modal = await this.modalCtrl.create({
-      component: ManchaCafeModalPage
-    })
-
-    await modal.present();
-  }
-
-  async pustulasModal(){
-    const modal = await this.modalCtrl.create({
-      component: PustulasModalPage
-    })
-
-    await modal.present();
-  }
-
-
-  async manchasplateadoModal(){
-    const modal = await this.modalCtrl.create({
-      component: ManchasPlateadoModalPage
-    })
-
-    await modal.present();
-  }
-
-  async hojasmoradasModal(){
-    const modal = await this.modalCtrl.create({
-      component: HojasMoradasModalPage
-    })
-
-    await modal.present();
-  }
 
   // imagenes
-  async hojasmanchasImage(){
+  async hojasmanchaImage(){
     const modal = await this.modalCtrl.create({
       component: HojasmanchasImagePage
     })

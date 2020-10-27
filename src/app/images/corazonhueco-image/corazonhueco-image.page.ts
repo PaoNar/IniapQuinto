@@ -19,12 +19,4 @@ export class CorazonhuecoImagePage implements OnInit {
     this.modalCtrl.dismiss();
   }
 
-  // async corazonhuecoModal(){
-  //   const modal = await this.modalCtrl.create({
-  //     component: CorazonhuecoModalPage
-  //   })
-
-  //   await modal.present();
-  // }
-
 }

@@ -13,7 +13,6 @@
   ],
   "include": [
     "src/**/*.spec.ts",
-    "src/**/*.d.ts",
-    "**/app/lazyModules/**/*.ts"
+    "src/**/*.d.ts"
   ]
 }

@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { ModalController } from '@ionic/angular';
-import { InsectosModalPage } from 'src/app/modals/insectos-modal/insectos-modal.page';
 import { VariablesService } from 'src/app/servicios/variables.service';
 
 @Component({
@@ -18,12 +17,5 @@ export class InsectosImagePage implements OnInit {
   salir(){
     this.modalCtrl.dismiss();
   }
-  
-  async insectosModal(){
-    const modal = await this.modalCtrl.create({
-      component: InsectosModalPage
-    })
-    await modal.present();
-  }
-
+ 
 }

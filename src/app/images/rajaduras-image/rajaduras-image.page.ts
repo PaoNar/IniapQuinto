@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { ModalController } from '@ionic/angular';
-import { RajadurasModalPage } from 'src/app/modals/rajaduras-modal/rajaduras-modal.page';
 import { VariablesService } from 'src/app/servicios/variables.service';
 
 @Component({
@@ -19,11 +18,6 @@ export class RajadurasImagePage implements OnInit {
     this.modalCtrl.dismiss();
   }
   
-  async rajadurasModal(){
-    const modal = await this.modalCtrl.create({
-      component: RajadurasModalPage
-    })
-    await modal.present();
-  }
+
 
 }

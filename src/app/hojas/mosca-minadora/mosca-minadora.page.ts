@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ModalController } from '@ionic/angular';
 import { MoscaminadoraImagePage } from 'src/app/images/moscaminadora-image/moscaminadora-image.page';
-import { MoscaMinadoraModalPage } from 'src/app/modals/mosca-minadora-modal/mosca-minadora-modal.page';
+import { MoscaminadoraModalPage } from 'src/app/modals/moscaminadora-modal/moscaminadora-modal.page';
 import { VariablesService } from 'src/app/servicios/variables.service';
 
 @Component({
@@ -22,7 +22,7 @@ export class MoscaMinadoraPage implements OnInit {
 
   async moscaminadoraModal(){
     const modal = await this.modalCtrl.create({
-      component: MoscaMinadoraModalPage
+      component: MoscaminadoraModalPage
     })
 
     await modal.present();

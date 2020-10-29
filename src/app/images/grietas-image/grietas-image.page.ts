@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { ModalController } from '@ionic/angular';
-import { GrietasModalPage } from 'src/app/modals/grietas-modal/grietas-modal.page';
 import { VariablesService } from 'src/app/servicios/variables.service';
 
 @Component({
@@ -17,14 +16,6 @@ export class GrietasImagePage implements OnInit {
 
   salir(){
     this.modalCtrl.dismiss();
-  }
-
-  async grietasModal(){
-    const modal = await this.modalCtrl.create({
-      component: GrietasModalPage
-    })
-
-    await modal.present();
   }
 
 }

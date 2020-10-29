@@ -7,10 +7,6 @@ import { HojasmarchitasImagePage } from 'src/app/images/hojasmarchitas-image/hoj
 import { HojasmoradasImagePage } from 'src/app/images/hojasmoradas-image/hojasmoradas-image.page';
 import { HojasmordidasImagePage } from 'src/app/images/hojasmordidas-image/hojasmordidas-image.page';
 import { HojasmosaicoImagePage } from 'src/app/images/hojasmosaico-image/hojasmosaico-image.page';
-import { HojasMoradasModalPage } from 'src/app/modals/hojas-moradas-modal/hojas-moradas-modal.page';
-import { ManchaCafeModalPage } from 'src/app/modals/mancha-cafe-modal/mancha-cafe-modal.page';
-import { ManchasPlateadoModalPage } from 'src/app/modals/manchas-plateado-modal/manchas-plateado-modal.page';
-import { PustulasModalPage } from 'src/app/modals/pustulas-modal/pustulas-modal.page';
 import { VariablesService } from 'src/app/servicios/variables.service';
 
 @Component({

@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { ModalController } from '@ionic/angular';
-import { CorazonhuecoModalPage } from 'src/app/modals/corazonhueco-modal/corazonhueco-modal.page';
 import { VariablesService } from 'src/app/servicios/variables.service';
 
 @Component({

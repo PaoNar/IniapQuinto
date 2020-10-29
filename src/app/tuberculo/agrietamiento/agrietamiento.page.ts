@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ModalController } from '@ionic/angular';
 import { AgrietamientoImagePage } from 'src/app/images/agrietamiento-image/agrietamiento-image.page';
-import { AgrietamientoModalPage } from 'src/app/modals/agrietamiento-modal/agrietamiento-modal.page';
 import { VariablesService } from 'src/app/servicios/variables.service';
 
 @Component({
@@ -17,14 +16,6 @@ export class AgrietamientoPage implements OnInit {
     }
 
     ngOnInit(): void {}
-    
-    async agrietamientoModal(){
-      const modal = await this.modalCtrl.create({
-        component: AgrietamientoModalPage
-      })
-  
-      await modal.present();
-    }
   
     // imagenes
   

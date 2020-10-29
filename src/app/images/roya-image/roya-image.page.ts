@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ModalController } from '@ionic/angular';
+import { RoyaModalPage } from 'src/app/modals/roya-modal/roya-modal.page';
 
 @Component({
   selector: 'app-roya-image',
@@ -15,6 +16,14 @@ export class RoyaImagePage implements OnInit {
 
   salir(){
     this.modalCtrl.dismiss();
+  }
+
+  async royaModal(){
+    const modal = await this.modalCtrl.create({
+      component: RoyaModalPage
+    })
+
+    await modal.present();
   }
 
 }

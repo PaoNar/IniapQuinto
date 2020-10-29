@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { ModalController } from '@ionic/angular';
-import { TuberculoPage } from 'src/app/modals/tuberculo/tuberculo.page';
 import { VariablesService } from 'src/app/servicios/variables.service';
 
 @Component({
@@ -19,11 +18,5 @@ export class TuberculoImagePage implements OnInit {
     this.modalCtrl.dismiss();
   }
   
-  async tuberculoModal(){
-    const modal = await this.modalCtrl.create({
-      component: TuberculoPage
-    })
-    await modal.present();
-  }
 
 }

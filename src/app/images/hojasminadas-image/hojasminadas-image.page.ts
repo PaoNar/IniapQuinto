@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { ModalController } from '@ionic/angular';
-import { HojasMinadasModalPage } from 'src/app/modals/hojas-minadas-modal/hojas-minadas-modal.page';
 import { VariablesService } from 'src/app/servicios/variables.service';
 
 @Component({
@@ -19,11 +18,5 @@ export class HojasminadasImagePage implements OnInit {
     this.modalCtrl.dismiss();
   }
   
-  async hojasminadasModal(){
-    const modal = await this.modalCtrl.create({
-      component: HojasMinadasModalPage
-    })
-    await modal.present();
-  }
 
 }

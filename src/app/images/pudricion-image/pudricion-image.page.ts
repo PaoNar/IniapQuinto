@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { ModalController } from '@ionic/angular';
-import { PudricionModalPage } from 'src/app/modals/pudricion-modal/pudricion-modal.page';
 import { VariablesService } from 'src/app/servicios/variables.service';
 
 @Component({
@@ -19,11 +18,6 @@ export class PudricionImagePage implements OnInit {
     this.modalCtrl.dismiss();
   }
   
-  async pudricionModal(){
-    const modal = await this.modalCtrl.create({
-      component: PudricionModalPage
-    })
-    await modal.present();
-  }
+ 
 
 }

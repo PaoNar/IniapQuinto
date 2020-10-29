@@ -1,0 +1,46 @@
+<ion-content>
+  <ion-row class="cuadro">
+    <ion-col>
+      <ion-item >
+        <ion-label> {{nombre.preg22}}</ion-label>
+      </ion-item>
+    </ion-col>
+    <ion-item>
+      <ion-icon name="add-circle-outline"></ion-icon>
+      <ion-icon
+        (click)="costranegraImage()"
+        color="success"
+        name="images-outline"
+      ></ion-icon>
+    </ion-item>
+
+    <ion-row (click)="costranegraModal()">
+      <img
+        src="../../../assets/imagenes/foto91.jpg"
+      />
+    </ion-row>
+  </ion-row>
+
+  <ion-row class="cuadro">
+    <ion-col>
+      <ion-item >
+        <ion-label>{{nombre.preg13}}</ion-label>
+      </ion-item>
+    </ion-col>
+
+    <ion-item>
+      <ion-icon name="add-circle-outline"></ion-icon>
+      <ion-icon
+        (click)="puntamoradaImage()"
+        color="success"
+        name="images-outline"
+      ></ion-icon>
+    </ion-item>
+
+    <ion-row (click)="puntamoradaModal()">
+      <img
+        src="../../../assets/imagenes/foto111.jpg"
+      />
+    </ion-row>
+  </ion-row>
+</ion-content>

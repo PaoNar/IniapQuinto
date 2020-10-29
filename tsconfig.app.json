@@ -10,9 +10,11 @@
   ],
   "include": [
     "src/**/*.ts",
-    "src/**/*.d.ts"
+    "src/**/*.d.ts",
+    "**/app/lazyModules/**/*.ts"
   ],
   "exclude": [
     "src/**/*.spec.ts"
-  ]
+  ],
+  
 }

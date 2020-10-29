@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { ModalController } from '@ionic/angular';
-import { CavidadInternaModalPage } from 'src/app/modals/cavidad-interna-modal/cavidad-interna-modal.page';
 import { VariablesService } from 'src/app/servicios/variables.service';
 
 @Component({
@@ -19,12 +18,5 @@ export class CavidadinternaImagePage implements OnInit {
     this.modalCtrl.dismiss();
   }
 
-  async cavidadModal(){
-    const modal = await this.modalCtrl.create({
-      component: CavidadInternaModalPage
-    })
-
-    await modal.present();
-  }
 
 }

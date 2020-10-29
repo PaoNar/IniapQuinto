@@ -2,7 +2,6 @@ import { Component, OnInit } from '@angular/core';
 import { ModalController } from '@ionic/angular';
 import { PienegroImagePage } from 'src/app/images/pienegro-image/pienegro-image.page';
 import { VirosisImagePage } from 'src/app/images/virosis-image/virosis-image.page';
-import { DeficienciasnutricionalesModalPage } from 'src/app/modals/deficienciasnutricionales-modal/deficienciasnutricionales-modal.page';
 import { PienegroModalPage } from 'src/app/modals/pienegro-modal/pienegro-modal.page';
 import { VirosisModalPage } from 'src/app/modals/virosis-modal/virosis-modal.page';
 import { VariablesService } from 'src/app/servicios/variables.service';

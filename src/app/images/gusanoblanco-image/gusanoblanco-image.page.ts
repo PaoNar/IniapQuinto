@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ModalController } from '@ionic/angular';
-import { GusanoBlancoModalPage } from 'src/app/Modals/gusano-blanco-modal/gusano-blanco-modal.page';
+import { GusanoblancoModalPage } from 'src/app/modals/gusanoblanco-modal/gusanoblanco-modal.page';
 
 @Component({
   selector: 'app-gusanoblanco-image',
@@ -20,7 +20,7 @@ export class GusanoblancoImagePage implements OnInit {
 
   async gusanoblancoModal(){
     const modal = await this.modalCtrl.create({
-      component: GusanoBlancoModalPage
+      component: GusanoblancoModalPage
     })
 
     await modal.present();

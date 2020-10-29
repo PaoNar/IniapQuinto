@@ -8,6 +8,7 @@ import { VariablesService } from 'src/app/servicios/variables.service';
   styleUrls: ['./sarnapolvorienta-modal.page.scss'],
 })
 export class SarnapolvorientaModalPage implements OnInit {
+
   constructor(private modalCtrl: ModalController, public nombre: VariablesService) { }
 
   ngOnInit() {

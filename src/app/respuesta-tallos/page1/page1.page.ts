@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ModalController } from '@ionic/angular';
 import { EngrosamientoImagePage } from 'src/app/images/engrosamiento-image/engrosamiento-image.page';
-import { HuecosImagePage } from 'src/app/images/huecos-image/huecos-image.page';
+import { HuecostalloImagePage } from 'src/app/images/huecostallo-image/huecostallo-image.page';
 import { ManchacafeImagePage } from 'src/app/images/manchacafe-image/manchacafe-image.page';
 import { ManchasnegrasImagePage } from 'src/app/images/manchasnegras-image/manchasnegras-image.page';
 import { PresenciatuberculosImagePage } from 'src/app/images/presenciatuberculos-image/presenciatuberculos-image.page';
@@ -55,9 +55,9 @@ export class Page1Page implements OnInit {
     await modal.present();
   }
 
-  async huecosImage(){
+  async huecostalloImage(){
     const modal = await this.modalCtrl.create({
-      component: HuecosImagePage
+      component: HuecostalloImagePage
     })
 
     await modal.present();

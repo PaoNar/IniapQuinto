@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ModalController } from '@ionic/angular';
 import { CostranegraImagePage } from 'src/app/images/costranegra-image/costranegra-image.page';
-import { CostraNegraModalPage } from 'src/app/modals/costra-negra-modal/costra-negra-modal.page';
+import { CostranegraModalPage } from 'src/app/modals/costranegra-modal/costranegra-modal.page';
 import { VariablesService } from 'src/app/servicios/variables.service';
 
 @Component({
@@ -20,7 +20,7 @@ export class CostraNegraPage implements OnInit {
     
     async costranegraModal(){
       const modal = await this.modalCtrl.create({
-        component: CostraNegraModalPage
+        component: CostranegraModalPage
       })
   
       await modal.present();

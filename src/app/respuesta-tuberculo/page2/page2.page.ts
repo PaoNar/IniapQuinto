@@ -8,9 +8,8 @@ import { PienegroImagePage } from 'src/app/images/pienegro-image/pienegro-image.
 import { PolillaImagePage } from 'src/app/images/polilla-image/polilla-image.page';
 import { SarnapolvorientaImagePage } from 'src/app/images/sarnapolvorienta-image/sarnapolvorienta-image.page';
 import { CarbonModalPage } from 'src/app/modals/carbon-modal/carbon-modal.page';
-import { CostraNegraModalPage } from 'src/app/modals/costra-negra-modal/costra-negra-modal.page';
-import { DanosfisiologicosModalPage } from 'src/app/modals/danosfisiologicos-modal/danosfisiologicos-modal.page';
-import { GusanoBlancoModalPage } from 'src/app/Modals/gusano-blanco-modal/gusano-blanco-modal.page';
+import { CostranegraModalPage } from 'src/app/modals/costranegra-modal/costranegra-modal.page';
+import { GusanoblancoModalPage } from 'src/app/modals/gusanoblanco-modal/gusanoblanco-modal.page';
 import { PienegroModalPage } from 'src/app/modals/pienegro-modal/pienegro-modal.page';
 import { PolillaModalPage } from 'src/app/modals/polilla-modal/polilla-modal.page';
 import { SarnapolvorientaModalPage } from 'src/app/modals/sarnapolvorienta-modal/sarnapolvorienta-modal.page';
@@ -58,7 +57,7 @@ export class Page2Page implements OnInit {
 
   async costranegraModal(){
     const modal = await this.modalCtrl.create({
-      component: CostraNegraModalPage
+      component: CostranegraModalPage
     })
 
     await modal.present();
@@ -66,7 +65,7 @@ export class Page2Page implements OnInit {
 
   async gusanoblancoModal(){
     const modal = await this.modalCtrl.create({
-      component: GusanoBlancoModalPage
+      component: GusanoblancoModalPage
     })
 
     await modal.present();
@@ -80,13 +79,7 @@ export class Page2Page implements OnInit {
     await modal.present();
   }
 
-  async danosfisiologicosModal(){
-    const modal = await this.modalCtrl.create({
-      component: DanosfisiologicosModalPage
-    })
-
-    await modal.present();
-  }
+  
 
   // Imagenes
   async carbonImage(){

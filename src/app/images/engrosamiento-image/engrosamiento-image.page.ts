@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { ModalController } from '@ionic/angular';
-import { EngrosamientoModalPage } from 'src/app/modals/engrosamiento-modal/engrosamiento-modal.page';
 import { VariablesService } from 'src/app/servicios/variables.service';
 
 @Component({
@@ -19,11 +18,6 @@ export class EngrosamientoImagePage implements OnInit {
     this.modalCtrl.dismiss();
   }
   
-  async engrosamientoModal(){
-    const modal = await this.modalCtrl.create({
-      component: EngrosamientoModalPage
-    })
-    await modal.present();
-  }
+ 
 
 }

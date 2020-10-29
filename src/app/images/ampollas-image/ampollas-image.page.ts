@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { ModalController } from '@ionic/angular';
-import { AmpollasModalPage } from 'src/app/modals/ampollas-modal/ampollas-modal.page';
 import { VariablesService } from 'src/app/servicios/variables.service';
 
 @Component({
@@ -19,12 +18,5 @@ export class AmpollasImagePage implements OnInit {
     this.modalCtrl.dismiss();
   }
 
-  async ampollasModal(){
-    const modal = await this.modalCtrl.create({
-      component: AmpollasModalPage
-    })
-
-    await modal.present();
-  }
 
 }

@@ -92,14 +92,45 @@ const routes: Routes = [
   {
     path: 'hojas',
     loadChildren: () => import('./hojas/hojas.module').then( m => m.HojasPageModule)
-  },  {
+  },
+  {
     path: 'modals',
     loadChildren: () => import('./modals/modals.module').then( m => m.ModalsPageModule)
   },
   {
     path: 'images',
     loadChildren: () => import('./images/images.module').then( m => m.ImagesPageModule)
+  },
+  {
+    path: 'modals',
+    loadChildren: () => import('./modals/modals.module').then( m => m.ModalsPageModule)
+  },
+  {
+    path: 'respuesta4planta',
+    loadChildren: () => import('./respuesta4planta/respuesta4planta.module').then( m => m.Respuesta4plantaPageModule)
+  },
+  {
+    path: 'respuesta3hojas',
+    loadChildren: () => import('./respuesta3hojas/respuesta3hojas.module').then( m => m.Respuesta3hojasPageModule)
+  },
+  {
+    path: 'raicessanasplanta',
+    loadChildren: () => import('./raicessanasplanta/raicessanasplanta.module').then( m => m.RaicessanasplantaPageModule)
+  },
+  {
+    path: 'hojasminadas',
+    loadChildren: () => import('./hojasminadas/hojasminadas.module').then( m => m.HojasminadasPageModule)
+  },
+  {
+    path: 'presenciatuberculos',
+    loadChildren: () => import('./presenciatuberculos/presenciatuberculos.module').then( m => m.PresenciatuberculosPageModule)
+  },
+  {
+    path: 'huecos',
+    loadChildren: () => import('./huecos/huecos.module').then( m => m.HuecosPageModule)
   }
+
+ 
 
 ];
 

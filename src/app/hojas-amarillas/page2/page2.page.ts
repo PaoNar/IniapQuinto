@@ -1,9 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ModalController } from '@ionic/angular';
-import { DeficienciasImagePage } from 'src/app/images/deficiencias-image/deficiencias-image.page';
 import { PienegroImagePage } from 'src/app/images/pienegro-image/pienegro-image.page';
 import { VirosisImagePage } from 'src/app/images/virosis-image/virosis-image.page';
-import { DeficienciasnutricionalesModalPage } from 'src/app/modals/deficienciasnutricionales-modal/deficienciasnutricionales-modal.page';
 import { PienegroModalPage } from 'src/app/modals/pienegro-modal/pienegro-modal.page';
 import { VirosisModalPage } from 'src/app/modals/virosis-modal/virosis-modal.page';
 import { VariablesService } from 'src/app/servicios/variables.service';
@@ -24,30 +22,7 @@ export class Page2Page implements OnInit {
       
     }
     
-  async virosisModal(){
-    const modal = await this.modalCtrl.create({
-      component: VirosisModalPage
-    })
-
-    await modal.present();
-  }
-
-  async pienegroModal(){
-    const modal = await this.modalCtrl.create({
-      component: PienegroModalPage
-    })
-
-    await modal.present();
-  }
-
-
-  // async deficienciasnutricionalesModal(){
-  //   const modal = await this.modalCtrl.create({
-  //     component: DeficienciasnutricionalesModalPage
-  //   })
-
-  //   await modal.present();
-  // }
+  
 
   // imagenes
 
@@ -67,13 +42,7 @@ export class Page2Page implements OnInit {
     await modal.present();
   }
 
-  // async deficienciasImage(){
-  //   const modal = await this.modalCtrl.create({
-  //     component: DeficienciasImagePage
-  //   })
-
-  //   await modal.present();
-  // }
+  
 
 
 }

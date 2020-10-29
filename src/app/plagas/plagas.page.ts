@@ -12,15 +12,15 @@ import { PuntamoradaImagePage } from '../images/puntamorada-image/puntamorada-im
 import { RoyaImagePage } from '../images/roya-image/roya-image.page';
 import { TripsImagePage } from '../images/trips-image/trips-image.page';
 import { VirosisImagePage } from '../images/virosis-image/virosis-image.page';
-import { CostraNegraModalPage } from '../modals/costra-negra-modal/costra-negra-modal.page';
-import { GusanoBlancoModalPage } from '../Modals/gusano-blanco-modal/gusano-blanco-modal.page';
+import { CostranegraModalPage } from '../modals/costranegra-modal/costranegra-modal.page';
+import { GusanoblancoModalPage } from '../modals/gusanoblanco-modal/gusanoblanco-modal.page';
 import { HeladaModalPage } from '../modals/helada-modal/helada-modal.page';
 import { LanchaModalPage } from '../modals/lancha-modal/lancha-modal.page';
-import { MoscaMinadoraModalPage } from '../modals/mosca-minadora-modal/mosca-minadora-modal.page';
+import { MoscaminadoraModalPage } from '../modals/moscaminadora-modal/moscaminadora-modal.page';
 import { NematodosModalPage } from '../Modals/nematodos-modal/nematodos-modal.page';
 import { PienegroModalPage } from '../modals/pienegro-modal/pienegro-modal.page';
 import { PolillaModalPage } from '../modals/polilla-modal/polilla-modal.page';
-import { PuntaMoradaModalPage } from '../modals/punta-morada-modal/punta-morada-modal.page';
+import { PuntamoradaModalPage } from '../modals/puntamorada-modal/puntamorada-modal.page';
 import { RoyaModalPage } from '../modals/roya-modal/roya-modal.page';
 import { TripsModalPage } from '../modals/trips-modal/trips-modal.page';
 import { VirosisModalPage } from '../modals/virosis-modal/virosis-modal.page';
@@ -69,7 +69,7 @@ export class PlagasPage implements OnInit {
 
   async gusanoblancoModal(){
     const modal = await this.modalCtrl.create({
-      component: GusanoBlancoModalPage
+      component: GusanoblancoModalPage
     })
 
     await modal.present();
@@ -77,7 +77,7 @@ export class PlagasPage implements OnInit {
 
   async moscaminadoraModal(){
     const modal = await this.modalCtrl.create({
-      component: MoscaMinadoraModalPage
+      component: MoscaminadoraModalPage
     })
 
     await modal.present();
@@ -119,7 +119,7 @@ export class PlagasPage implements OnInit {
 
   async costranegraModal(){
     const modal = await this.modalCtrl.create({
-      component: CostraNegraModalPage
+      component: CostranegraModalPage
     })
 
     await modal.present();
@@ -136,7 +136,7 @@ export class PlagasPage implements OnInit {
 
   async puntamoradaModal(){
     const modal = await this.modalCtrl.create({
-      component: PuntaMoradaModalPage
+      component: PuntamoradaModalPage
     })
 
     await modal.present();

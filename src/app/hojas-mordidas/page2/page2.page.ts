@@ -4,8 +4,8 @@ import { GusanoblancoImagePage } from 'src/app/images/gusanoblanco-image/gusanob
 import { MoscaminadoraImagePage } from 'src/app/images/moscaminadora-image/moscaminadora-image.page';
 import { PolillaImagePage } from 'src/app/images/polilla-image/polilla-image.page';
 import { VirosisImagePage } from 'src/app/images/virosis-image/virosis-image.page';
-import { GusanoBlancoModalPage } from 'src/app/Modals/gusano-blanco-modal/gusano-blanco-modal.page';
-import { MoscaMinadoraModalPage } from 'src/app/modals/mosca-minadora-modal/mosca-minadora-modal.page';
+import { GusanoblancoModalPage } from 'src/app/modals/gusanoblanco-modal/gusanoblanco-modal.page';
+import { MoscaminadoraModalPage } from 'src/app/modals/moscaminadora-modal/moscaminadora-modal.page';
 import { PolillaModalPage } from 'src/app/modals/polilla-modal/polilla-modal.page';
 import { VirosisModalPage } from 'src/app/modals/virosis-modal/virosis-modal.page';
 import { VariablesService } from 'src/app/servicios/variables.service';
@@ -36,7 +36,7 @@ export class Page2Page implements OnInit {
 
   async gusanoblancoModal(){
     const modal = await this.modalCtrl.create({
-      component: GusanoBlancoModalPage
+      component: GusanoblancoModalPage
     })
 
     await modal.present();
@@ -45,7 +45,7 @@ export class Page2Page implements OnInit {
 
   async moscaminadoraModal(){
     const modal = await this.modalCtrl.create({
-      component: MoscaMinadoraModalPage
+      component: MoscaminadoraModalPage
     })
 
     await modal.present();

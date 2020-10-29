@@ -1,13 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { ModalController } from '@ionic/angular';
 import { HojasmoradasImagePage } from 'src/app/images/hojasmoradas-image/hojasmoradas-image.page';
-import { ManchacafeImagePage } from 'src/app/images/manchacafe-image/manchacafe-image.page';
-import { ManchasplateadoImagePage } from 'src/app/images/manchasplateado-image/manchasplateado-image.page';
-import { PustulasImagePage } from 'src/app/images/pustulas-image/pustulas-image.page';
-import { HojasMoradasModalPage } from 'src/app/modals/hojas-moradas-modal/hojas-moradas-modal.page';
-import { ManchaCafeModalPage } from 'src/app/modals/mancha-cafe-modal/mancha-cafe-modal.page';
-import { ManchasPlateadoModalPage } from 'src/app/modals/manchas-plateado-modal/manchas-plateado-modal.page';
-import { PustulasModalPage } from 'src/app/modals/pustulas-modal/pustulas-modal.page';
+import { ManchacafeplantaImagePage } from 'src/app/images/manchacafeplanta-image/manchacafeplanta-image.page';
+import { ManchasplateadoplantaImagePage } from 'src/app/images/manchasplateadoplanta-image/manchasplateadoplanta-image.page';
+import { PustulasplantaImagePage } from 'src/app/images/pustulasplanta-image/pustulasplanta-image.page';
 import { VariablesService } from 'src/app/servicios/variables.service';
 
 @Component({
@@ -26,9 +22,9 @@ export class Page1Page implements OnInit {
 
   // imagenes
 
-  async manchacafeImage(){
+  async manchacafeplantaImage(){
     const modal = await this.modalCtrl.create({
-      component: ManchacafeImagePage
+      component: ManchacafeplantaImagePage
     })
     await modal.present();
   }
@@ -40,16 +36,16 @@ export class Page1Page implements OnInit {
     await modal.present();
   }
 
-  async pustulasImage(){
+  async pustulasplantaImage(){
     const modal = await this.modalCtrl.create({
-      component: PustulasImagePage
+      component: PustulasplantaImagePage
     })
     await modal.present();
   }
 
-  async manchasplateadoImage(){
+  async manchasplateadoplantaImage(){
     const modal = await this.modalCtrl.create({
-      component: ManchasplateadoImagePage
+      component: ManchasplateadoplantaImagePage
     })
     await modal.present();
   }

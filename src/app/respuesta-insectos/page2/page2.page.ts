@@ -4,9 +4,8 @@ import { GusanoblancoImagePage } from 'src/app/images/gusanoblanco-image/gusanob
 import { PolillaImagePage } from 'src/app/images/polilla-image/polilla-image.page';
 import { PsilidosImagePage } from 'src/app/images/psilidos-image/psilidos-image.page';
 import { PulgonesImagePage } from 'src/app/images/pulgones-image/pulgones-image.page';
-import { GusanoBlancoModalPage } from 'src/app/Modals/gusano-blanco-modal/gusano-blanco-modal.page';
+import { GusanoblancoModalPage } from 'src/app/modals/gusanoblanco-modal/gusanoblanco-modal.page';
 import { PolillaModalPage } from 'src/app/modals/polilla-modal/polilla-modal.page';
-import { PsilidosModalPage } from 'src/app/modals/psilidos-modal/psilidos-modal.page';
 import { PulgonesModalPage } from 'src/app/modals/pulgones-modal/pulgones-modal.page';
 import { VariablesService } from 'src/app/servicios/variables.service';
 
@@ -28,7 +27,7 @@ export class Page2Page implements OnInit {
     
   async gusanoblancoModal(){
     const modal = await this.modalCtrl.create({
-      component: GusanoBlancoModalPage
+      component: GusanoblancoModalPage
     })
 
     await modal.present();
@@ -42,14 +41,6 @@ export class Page2Page implements OnInit {
     await modal.present();
   }
 
-
-  async psilidosModal(){
-    const modal = await this.modalCtrl.create({
-      component: PsilidosModalPage
-    })
-
-    await modal.present();
-  }
 
   async pulgonesModal(){
     const modal = await this.modalCtrl.create({

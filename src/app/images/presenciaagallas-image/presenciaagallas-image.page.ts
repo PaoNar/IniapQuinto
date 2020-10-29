@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { ModalController } from '@ionic/angular';
-import { PresenciaAgallasModalPage } from 'src/app/modals/presencia-agallas-modal/presencia-agallas-modal.page';
 import { VariablesService } from 'src/app/servicios/variables.service';
 
 @Component({
@@ -19,11 +18,4 @@ export class PresenciaagallasImagePage implements OnInit {
     this.modalCtrl.dismiss();
   }
   
-  async presenciaagallasModal(){
-    const modal = await this.modalCtrl.create({
-      component:PresenciaAgallasModalPage
-    })
-    await modal.present();
-  }
-
 }

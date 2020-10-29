@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ModalController } from '@ionic/angular';
 import { PuntamoradaImagePage } from 'src/app/images/puntamorada-image/puntamorada-image.page';
-import { PuntaMoradaModalPage } from 'src/app/modals/punta-morada-modal/punta-morada-modal.page';
+import { PuntamoradaModalPage } from 'src/app/modals/puntamorada-modal/puntamorada-modal.page';
 import { VariablesService } from 'src/app/servicios/variables.service';
 
 @Component({
@@ -22,7 +22,7 @@ export class PuntamoradaPage implements OnInit {
     
     async puntamoradaModal(){
       const modal = await this.modalCtrl.create({
-        component: PuntaMoradaModalPage
+        component: PuntamoradaModalPage
       })
   
       await modal.present();

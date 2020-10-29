@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ModalController } from '@ionic/angular';
+import { HeladaModalPage } from 'src/app/modals/helada-modal/helada-modal.page';
 
 @Component({
   selector: 'app-helada-image',
@@ -15,6 +16,14 @@ export class HeladaImagePage implements OnInit {
 
   salir(){
     this.modalCtrl.dismiss();
+  }
+
+  async heladaModal(){
+    const modal = await this.modalCtrl.create({
+      component: HeladaModalPage
+    })
+
+    await modal.present();
   }
 
 }

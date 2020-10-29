@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { ModalController } from '@ionic/angular';
-import { PsilidosModalPage } from 'src/app/modals/psilidos-modal/psilidos-modal.page';
 import { VariablesService } from 'src/app/servicios/variables.service';
 
 @Component({
@@ -19,11 +18,6 @@ export class PsilidosImagePage implements OnInit {
     this.modalCtrl.dismiss();
   }
   
-  async psilidosModal(){
-    const modal = await this.modalCtrl.create({
-      component: PsilidosModalPage
-    })
-    await modal.present();
-  }
+  
 
 }

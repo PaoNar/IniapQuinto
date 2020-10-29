@@ -4,10 +4,6 @@ import { HojasmoradasImagePage } from 'src/app/images/hojasmoradas-image/hojasmo
 import { ManchacafeImagePage } from 'src/app/images/manchacafe-image/manchacafe-image.page';
 import { ManchasplateadoImagePage } from 'src/app/images/manchasplateado-image/manchasplateado-image.page';
 import { PustulasImagePage } from 'src/app/images/pustulas-image/pustulas-image.page';
-import { HojasMoradasModalPage } from 'src/app/modals/hojas-moradas-modal/hojas-moradas-modal.page';
-import { ManchaCafeModalPage } from 'src/app/modals/mancha-cafe-modal/mancha-cafe-modal.page';
-import { ManchasPlateadoModalPage } from 'src/app/modals/manchas-plateado-modal/manchas-plateado-modal.page';
-import { PustulasModalPage } from 'src/app/modals/pustulas-modal/pustulas-modal.page';
 import { VariablesService } from 'src/app/servicios/variables.service';
 
 @Component({

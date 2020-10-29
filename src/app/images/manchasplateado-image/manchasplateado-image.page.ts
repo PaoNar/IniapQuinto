@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { ModalController } from '@ionic/angular';
-import { ManchasPlateadoModalPage } from 'src/app/modals/manchas-plateado-modal/manchas-plateado-modal.page';
 import { VariablesService } from 'src/app/servicios/variables.service';
 
 @Component({
@@ -17,14 +16,6 @@ export class ManchasplateadoImagePage implements OnInit {
 
   salir(){
     this.modalCtrl.dismiss();
-  }
-
-  async manchasplateadoModal(){
-    const modal = await this.modalCtrl.create({
-      component: ManchasPlateadoModalPage
-    })
-
-    await modal.present();
   }
 
 }

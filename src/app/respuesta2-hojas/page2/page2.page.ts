@@ -5,7 +5,7 @@ import { PuntamoradaImagePage } from 'src/app/images/puntamorada-image/puntamora
 import { RoyaImagePage } from 'src/app/images/roya-image/roya-image.page';
 import { TripsImagePage } from 'src/app/images/trips-image/trips-image.page';
 import { LanchaModalPage } from 'src/app/modals/lancha-modal/lancha-modal.page';
-import { PuntaMoradaModalPage } from 'src/app/modals/punta-morada-modal/punta-morada-modal.page';
+import { PuntamoradaModalPage } from 'src/app/modals/puntamorada-modal/puntamorada-modal.page';
 import { RoyaModalPage } from 'src/app/modals/roya-modal/roya-modal.page';
 import { TripsModalPage } from 'src/app/modals/trips-modal/trips-modal.page';
 import { VariablesService } from 'src/app/servicios/variables.service';
@@ -53,7 +53,7 @@ export class Page2Page implements OnInit {
 
   async puntamoradaModal(){
     const modal = await this.modalCtrl.create({
-      component: PuntaMoradaModalPage
+      component: PuntamoradaModalPage
     })
 
     await modal.present();

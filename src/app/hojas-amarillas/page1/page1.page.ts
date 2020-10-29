@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ModalController } from '@ionic/angular';
-import { BasetalloImagePage } from 'src/app/images/basetallo-image/basetallo-image.page';
+import { BasetalloplantaImagePage } from 'src/app/images/basetalloplanta-image/basetalloplanta-image.page';
 import { ManchasnegrasImagePage } from 'src/app/images/manchasnegras-image/manchasnegras-image.page';
 import { VariablesService } from 'src/app/servicios/variables.service';
 
@@ -21,9 +21,9 @@ export class Page1Page implements OnInit {
 
   // imagenes
 
-  async basetalloImage(){
+  async basetalloplantaImage(){
     const modal = await this.modalCtrl.create({
-      component: BasetalloImagePage
+      component: BasetalloplantaImagePage
     })
 
     await modal.present();

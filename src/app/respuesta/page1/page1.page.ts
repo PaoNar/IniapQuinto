@@ -1,19 +1,12 @@
 import { Component, OnInit } from '@angular/core';
 import { ModalController } from '@ionic/angular';
-import { EnrrollamientoImagePage } from 'src/app/images/enrrollamiento-image/enrrollamiento-image.page';
-import { HojasamarillasImagePage } from 'src/app/images/hojasamarillas-image/hojasamarillas-image.page';
-import { HojasmanchasImagePage } from 'src/app/images/hojasmanchas-image/hojasmanchas-image.page';
+import { EnrrollamientoplantaImagePage } from 'src/app/images/enrrollamientoplanta-image/enrrollamientoplanta-image.page';
+import { HojasamarillasplantaImagePage } from 'src/app/images/hojasamarillasplanta-image/hojasamarillasplanta-image.page';
+import { HojasmanchasplantaImagePage } from 'src/app/images/hojasmanchasplanta-image/hojasmanchasplanta-image.page';
 import { HojasmarchitasImagePage } from 'src/app/images/hojasmarchitas-image/hojasmarchitas-image.page';
 import { HojasmoradasImagePage } from 'src/app/images/hojasmoradas-image/hojasmoradas-image.page';
 import { HojasmosaicoImagePage } from 'src/app/images/hojasmosaico-image/hojasmosaico-image.page';
 import { PlantaspequenasImagePage } from 'src/app/images/plantaspequenas-image/plantaspequenas-image.page';
-import { EnrrolamientoModalPage } from 'src/app/Modals/enrrolamiento-modal/enrrolamiento-modal.page';
-import { HojasAmarillasModalPage } from 'src/app/modals/hojas-amarillas-modal/hojas-amarillas-modal.page';
-import { HojasManchasPage } from 'src/app/modals/hojas-manchas/hojas-manchas.page';
-import { HojasMarchitasModalPage } from 'src/app/modals/hojas-marchitas-modal/hojas-marchitas-modal.page';
-import { HojasMoradasModalPage } from 'src/app/modals/hojas-moradas-modal/hojas-moradas-modal.page';
-import { MosaicoModalPage } from 'src/app/modals/mosaico-modal/mosaico-modal.page';
-import { PlantaspequenasModalPage } from 'src/app/modals/plantaspequenas-modal/plantaspequenas-modal.page';
 import { VariablesService } from 'src/app/servicios/variables.service';
 
 @Component({
@@ -32,9 +25,9 @@ export class Page1Page implements OnInit {
 
   // imagenes
 
-  async hojasmanchaImage(){
+  async hojasmanchasplantaImage(){
     const modal = await this.modalCtrl.create({
-      component: HojasmanchasImagePage
+      component: HojasmanchasplantaImagePage
     })
 
     await modal.present();
@@ -49,9 +42,9 @@ export class Page1Page implements OnInit {
   }
 
 
-  async hojasamarillasImage(){
+  async hojasamarillasplantaImage(){
     const modal = await this.modalCtrl.create({
-      component: HojasamarillasImagePage
+      component: HojasamarillasplantaImagePage
     })
 
     await modal.present();
@@ -72,9 +65,9 @@ export class Page1Page implements OnInit {
     await modal.present();
   }
 
-  async enrrollamientoImage(){
+  async enrrollamientoplantaImage(){
     const modal = await this.modalCtrl.create({
-      component: EnrrollamientoImagePage
+      component: EnrrollamientoplantaImagePage
     })
     await modal.present();
   }

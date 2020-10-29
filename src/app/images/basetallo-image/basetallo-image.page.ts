@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { ModalController } from '@ionic/angular';
-import { BaseTalloModalPage } from 'src/app/modals/base-tallo-modal/base-tallo-modal.page';
 import { VariablesService } from 'src/app/servicios/variables.service';
 
 @Component({
@@ -19,12 +18,6 @@ export class BasetalloImagePage implements OnInit {
     this.modalCtrl.dismiss();
   }
 
-  async basetalloModal(){
-    const modal = await this.modalCtrl.create({
-      component: BaseTalloModalPage
-    })
-
-    await modal.present();
-  }
+  
 
 }

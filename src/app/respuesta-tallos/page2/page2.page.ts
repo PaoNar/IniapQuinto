@@ -5,11 +5,11 @@ import { LanchaImagePage } from 'src/app/images/lancha-image/lancha-image.page';
 import { PienegroImagePage } from 'src/app/images/pienegro-image/pienegro-image.page';
 import { PolillaImagePage } from 'src/app/images/polilla-image/polilla-image.page';
 import { PuntamoradaImagePage } from 'src/app/images/puntamorada-image/puntamorada-image.page';
-import { CostraNegraModalPage } from 'src/app/modals/costra-negra-modal/costra-negra-modal.page';
+import { CostranegraModalPage } from 'src/app/modals/costranegra-modal/costranegra-modal.page';
 import { LanchaModalPage } from 'src/app/modals/lancha-modal/lancha-modal.page';
 import { PienegroModalPage } from 'src/app/modals/pienegro-modal/pienegro-modal.page';
 import { PolillaModalPage } from 'src/app/modals/polilla-modal/polilla-modal.page';
-import { PuntaMoradaModalPage } from 'src/app/modals/punta-morada-modal/punta-morada-modal.page';
+import { PuntamoradaModalPage } from 'src/app/modals/puntamorada-modal/puntamorada-modal.page';
 import { VariablesService } from 'src/app/servicios/variables.service';
 
 @Component({
@@ -54,7 +54,7 @@ export class Page2Page implements OnInit {
 
   async costranegraModal(){
     const modal = await this.modalCtrl.create({
-      component: CostraNegraModalPage
+      component: CostranegraModalPage
     })
 
     await modal.present();
@@ -62,7 +62,7 @@ export class Page2Page implements OnInit {
 
   async puntamoradaModal(){
     const modal = await this.modalCtrl.create({
-      component: PuntaMoradaModalPage
+      component: PuntamoradaModalPage
     })
 
     await modal.present();

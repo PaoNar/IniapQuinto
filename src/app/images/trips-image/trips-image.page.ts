@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ModalController } from '@ionic/angular';
+import { TripsModalPage } from 'src/app/modals/trips-modal/trips-modal.page';
 
 @Component({
   selector: 'app-trips-image',
@@ -16,5 +17,13 @@ export class TripsImagePage implements OnInit {
   salir(){
     this.modalCtrl.dismiss();
   }
+  async tripsModal(){
+    const modal = await this.modalCtrl.create({
+      component: TripsModalPage
+    })
+
+    await modal.present();
+  }
+
 
 }
